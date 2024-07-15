@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE8004D92C45133200B6FA90 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8004D82C45133200B6FA90 /* OnboardingModel.swift */; };
+		BE8004DB2C45135100B6FA90 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8004DA2C45135100B6FA90 /* OnboardingViewModel.swift */; };
+		BE8004DD2C45136D00B6FA90 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8004DC2C45136D00B6FA90 /* OnboardingView.swift */; };
+		BE8004DF2C45147D00B6FA90 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8004DE2C45147D00B6FA90 /* ChartView.swift */; };
+		BE8004E12C45148D00B6FA90 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8004E02C45148D00B6FA90 /* Data.swift */; };
+		BE8004E32C45149600B6FA90 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8004E22C45149600B6FA90 /* Utils.swift */; };
+		BE8004E72C4522EA00B6FA90 /* OverviewChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8004E62C4522EA00B6FA90 /* OverviewChartView.swift */; };
 		D9EF2B9B2C3FE428009B044A /* nano_challenge_3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EF2B9A2C3FE428009B044A /* nano_challenge_3App.swift */; };
 		D9EF2B9D2C3FE428009B044A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EF2B9C2C3FE428009B044A /* ContentView.swift */; };
 		D9EF2B9F2C3FE42A009B044A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9EF2B9E2C3FE42A009B044A /* Assets.xcassets */; };
@@ -22,6 +29,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE8004D82C45133200B6FA90 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		BE8004DA2C45135100B6FA90 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		BE8004DC2C45136D00B6FA90 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		BE8004DE2C45147D00B6FA90 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		BE8004E02C45148D00B6FA90 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		BE8004E22C45149600B6FA90 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		BE8004E62C4522EA00B6FA90 /* OverviewChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewChartView.swift; sourceTree = "<group>"; };
 		D9EF2B972C3FE428009B044A /* nano-challenge-3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nano-challenge-3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9EF2B9A2C3FE428009B044A /* nano_challenge_3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nano_challenge_3App.swift; sourceTree = "<group>"; };
 		D9EF2B9C2C3FE428009B044A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +62,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE8004D52C45124000B6FA90 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BE8004D82C45133200B6FA90 /* OnboardingModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BE8004D62C45124900B6FA90 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BE8004DA2C45135100B6FA90 /* OnboardingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BE8004D72C45126000B6FA90 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BE8004DC2C45136D00B6FA90 /* OnboardingView.swift */,
+				BE8004DE2C45147D00B6FA90 /* ChartView.swift */,
+				BE8004E62C4522EA00B6FA90 /* OverviewChartView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D9EF2B8E2C3FE428009B044A = {
 			isa = PBXGroup;
 			children = (
@@ -67,11 +107,16 @@
 		D9EF2B992C3FE428009B044A /* nano-challenge-3 */ = {
 			isa = PBXGroup;
 			children = (
+				BE8004D52C45124000B6FA90 /* Model */,
+				BE8004D62C45124900B6FA90 /* ViewModel */,
+				BE8004D72C45126000B6FA90 /* View */,
 				D9EF2B9A2C3FE428009B044A /* nano_challenge_3App.swift */,
 				D9EF2B9C2C3FE428009B044A /* ContentView.swift */,
 				D9EF2BB02C4540E7009B044A /* Models */,
 				D9EF2B9E2C3FE42A009B044A /* Assets.xcassets */,
 				D9EF2BA02C3FE42A009B044A /* Preview Content */,
+				BE8004E02C45148D00B6FA90 /* Data.swift */,
+				BE8004E22C45149600B6FA90 /* Utils.swift */,
 			);
 			path = "nano-challenge-3";
 			sourceTree = "<group>";
@@ -178,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE8004E12C45148D00B6FA90 /* Data.swift in Sources */,
 				D9EF2BBA2C4540E7009B044A /* sNoteBlockStyle.swift in Sources */,
 				D9EF2B9D2C3FE428009B044A /* ContentView.swift in Sources */,
 				D9EF2BBF2C4540E7009B044A /* eNoteBlockPreset.swift in Sources */,
@@ -187,6 +233,12 @@
 				D9EF2BC02C4540E7009B044A /* cNote.swift in Sources */,
 				D9EF2BBD2C4540E7009B044A /* sNoteAccessRecord.swift in Sources */,
 				D9EF2B9B2C3FE428009B044A /* nano_challenge_3App.swift in Sources */,
+				BE8004E72C4522EA00B6FA90 /* OverviewChartView.swift in Sources */,
+				BE8004D92C45133200B6FA90 /* OnboardingModel.swift in Sources */,
+				BE8004DD2C45136D00B6FA90 /* OnboardingView.swift in Sources */,
+				BE8004DB2C45135100B6FA90 /* OnboardingViewModel.swift in Sources */,
+				BE8004DF2C45147D00B6FA90 /* ChartView.swift in Sources */,
+				BE8004E32C45149600B6FA90 /* Utils.swift in Sources */,
 				D9EF2BC12C4540E7009B044A /* cFolder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,7 +373,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"nano-challenge-3/Preview Content\"";
-				DEVELOPMENT_TEAM = XV7Y4WXFRS;
+				DEVELOPMENT_TEAM = 7Z75T55G26;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -334,7 +386,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.apple.nano-challenge-3";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.apple.nano-challenge-31";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -350,7 +402,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"nano-challenge-3/Preview Content\"";
-				DEVELOPMENT_TEAM = XV7Y4WXFRS;
+				DEVELOPMENT_TEAM = 7Z75T55G26;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -363,7 +415,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.apple.nano-challenge-3";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.apple.nano-challenge-31";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
