@@ -18,6 +18,14 @@
 		D9EF2B9D2C3FE428009B044A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EF2B9C2C3FE428009B044A /* ContentView.swift */; };
 		D9EF2B9F2C3FE42A009B044A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9EF2B9E2C3FE42A009B044A /* Assets.xcassets */; };
 		D9EF2BA22C3FE42A009B044A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9EF2BA12C3FE42A009B044A /* Preview Assets.xcassets */; };
+		D9EF2BBA2C4540E7009B044A /* sNoteBlockStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EF2BB22C4540E7009B044A /* sNoteBlockStyle.swift */; };
+		D9EF2BBB2C4540E7009B044A /* cNoteParagraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EF2BB32C4540E7009B044A /* cNoteParagraph.swift */; };
+		D9EF2BBC2C4540E7009B044A /* cItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EF2BB42C4540E7009B044A /* cItem.swift */; };
+		D9EF2BBD2C4540E7009B044A /* sNoteAccessRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EF2BB52C4540E7009B044A /* sNoteAccessRecord.swift */; };
+		D9EF2BBE2C4540E7009B044A /* sBackgroundForegroundColorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EF2BB62C4540E7009B044A /* sBackgroundForegroundColorSet.swift */; };
+		D9EF2BBF2C4540E7009B044A /* eNoteBlockPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EF2BB72C4540E7009B044A /* eNoteBlockPreset.swift */; };
+		D9EF2BC02C4540E7009B044A /* cNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EF2BB82C4540E7009B044A /* cNote.swift */; };
+		D9EF2BC12C4540E7009B044A /* cFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EF2BB92C4540E7009B044A /* cFolder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +41,14 @@
 		D9EF2B9C2C3FE428009B044A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D9EF2B9E2C3FE42A009B044A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9EF2BA12C3FE42A009B044A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D9EF2BB22C4540E7009B044A /* sNoteBlockStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sNoteBlockStyle.swift; sourceTree = "<group>"; };
+		D9EF2BB32C4540E7009B044A /* cNoteParagraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cNoteParagraph.swift; sourceTree = "<group>"; };
+		D9EF2BB42C4540E7009B044A /* cItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cItem.swift; sourceTree = "<group>"; };
+		D9EF2BB52C4540E7009B044A /* sNoteAccessRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sNoteAccessRecord.swift; sourceTree = "<group>"; };
+		D9EF2BB62C4540E7009B044A /* sBackgroundForegroundColorSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sBackgroundForegroundColorSet.swift; sourceTree = "<group>"; };
+		D9EF2BB72C4540E7009B044A /* eNoteBlockPreset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = eNoteBlockPreset.swift; sourceTree = "<group>"; };
+		D9EF2BB82C4540E7009B044A /* cNote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cNote.swift; sourceTree = "<group>"; };
+		D9EF2BB92C4540E7009B044A /* cFolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cFolder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +112,7 @@
 				BE8004D72C45126000B6FA90 /* View */,
 				D9EF2B9A2C3FE428009B044A /* nano_challenge_3App.swift */,
 				D9EF2B9C2C3FE428009B044A /* ContentView.swift */,
+				D9EF2BB02C4540E7009B044A /* Models */,
 				D9EF2B9E2C3FE42A009B044A /* Assets.xcassets */,
 				D9EF2BA02C3FE42A009B044A /* Preview Content */,
 				BE8004E02C45148D00B6FA90 /* Data.swift */,
@@ -110,6 +127,30 @@
 				D9EF2BA12C3FE42A009B044A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D9EF2BB02C4540E7009B044A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D9EF2BB12C4540E7009B044A /* NonVisible */,
+			);
+			name = Models;
+			path = "../../../../Downloads/nano-challange-3-master/nano-challenge-3/Models";
+			sourceTree = "<group>";
+		};
+		D9EF2BB12C4540E7009B044A /* NonVisible */ = {
+			isa = PBXGroup;
+			children = (
+				D9EF2BB22C4540E7009B044A /* sNoteBlockStyle.swift */,
+				D9EF2BB32C4540E7009B044A /* cNoteParagraph.swift */,
+				D9EF2BB42C4540E7009B044A /* cItem.swift */,
+				D9EF2BB52C4540E7009B044A /* sNoteAccessRecord.swift */,
+				D9EF2BB62C4540E7009B044A /* sBackgroundForegroundColorSet.swift */,
+				D9EF2BB72C4540E7009B044A /* eNoteBlockPreset.swift */,
+				D9EF2BB82C4540E7009B044A /* cNote.swift */,
+				D9EF2BB92C4540E7009B044A /* cFolder.swift */,
+			);
+			path = NonVisible;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,7 +224,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE8004E12C45148D00B6FA90 /* Data.swift in Sources */,
+				D9EF2BBA2C4540E7009B044A /* sNoteBlockStyle.swift in Sources */,
 				D9EF2B9D2C3FE428009B044A /* ContentView.swift in Sources */,
+				D9EF2BBF2C4540E7009B044A /* eNoteBlockPreset.swift in Sources */,
+				D9EF2BBE2C4540E7009B044A /* sBackgroundForegroundColorSet.swift in Sources */,
+				D9EF2BBC2C4540E7009B044A /* cItem.swift in Sources */,
+				D9EF2BBB2C4540E7009B044A /* cNoteParagraph.swift in Sources */,
+				D9EF2BC02C4540E7009B044A /* cNote.swift in Sources */,
+				D9EF2BBD2C4540E7009B044A /* sNoteAccessRecord.swift in Sources */,
 				D9EF2B9B2C3FE428009B044A /* nano_challenge_3App.swift in Sources */,
 				BE8004E72C4522EA00B6FA90 /* OverviewChartView.swift in Sources */,
 				BE8004D92C45133200B6FA90 /* OnboardingModel.swift in Sources */,
@@ -191,6 +239,7 @@
 				BE8004DB2C45135100B6FA90 /* OnboardingViewModel.swift in Sources */,
 				BE8004DF2C45147D00B6FA90 /* ChartView.swift in Sources */,
 				BE8004E32C45149600B6FA90 /* Utils.swift in Sources */,
+				D9EF2BC12C4540E7009B044A /* cFolder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
