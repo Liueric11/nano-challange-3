@@ -37,19 +37,19 @@ struct OverviewChartView: View {
     let data = generateDummySalesData()
     var body: some View {
         Chart(data, id: \.day) {
-                                BarMark(
-                                    x: .value("Date", $0.day),
-                                    y: .value("Minute", $0.minute),
-                                    width: 12
-                                )
-                                .accessibilityLabel($0.day.formatted(date: .complete, time: .omitted))
-                                .accessibilityValue("\($0.minute) sold")
-                                .accessibilityHidden(true)
-                                .foregroundStyle($0.id == data.last?.id ? Color.indigo : Color.gray)
-                            }
-                            .chartXAxis(.hidden)
-                            .chartYAxis(.hidden)
-                            .frame(width: 96, height: 40)
+            BarMark(
+                x: .value("Date", $0.day),
+                y: .value("Minute", $0.minute),
+                width: 12
+            )
+            .accessibilityLabel($0.day.formatted(date: .complete, time: .omitted))
+            .accessibilityValue("\($0.minute) sold")
+            .accessibilityHidden(true)
+            .foregroundStyle($0.id == data.last?.id ? Color.indigo : Color.gray)
+        }
+        .chartXAxis(.hidden)
+        .chartYAxis(.hidden)
+        .frame(width: 96, height: 40)
     }
 }
 
