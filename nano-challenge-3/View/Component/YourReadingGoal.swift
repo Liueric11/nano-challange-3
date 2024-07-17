@@ -94,7 +94,7 @@ struct YourReadingGoal: View {
             .frame(width: 361, height: 123)
         }
         .sheet(isPresented: $isGoalModalPresented) {
-            ReadingGoalView()
+            ReadingGoalView(isGoalModalPresented: $isGoalModalPresented)
         }
     }
 }

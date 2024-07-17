@@ -14,43 +14,50 @@ struct ShareView: View {
 
     var body: some View {
         var items : [Any] = []
-        VStack {
-            Button(action: {
-                guard let imageShared = ImageRenderer(content: SharedImageView()).uiImage else {
-                    return
-                }
-                
-                items.removeAll()
-                items.append(imageShared)
         
-                sheet.toggle()
-                
-            }) {
-                Image(systemName: "square.and.arrow.up.fill")
-                    .font(.system(size: 26))
-                    .padding(.bottom, 300)
-                    .padding(.leading, 250)
-            }
-            .sheet(isPresented: $sheet, content: {
-                ShareSheet(items: items)
-            })
-            
-            Text("modal view")
-                .font(.system(size: 30))
-                .padding(.bottom, 200)
-            
-            Button(action: {
-                isPresented = false
-            }) {
-                Text("Dismiss")
-                    .font(.title)
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-            }
+        VStack {
+            SharedImageView()
         }
         .padding()
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color(.systemGroupedBackground))
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                HStack {
+                    Text("Preview")
+                        .font(.headline)
+                        .padding(.leading, 170)
+                    Spacer()
+                    
+                    Button(action: {
+                        guard let imageShared = ImageRenderer(content: SharedImageView()).uiImage else {
+                            return
+                        }
+                        
+                        items.removeAll()
+                        items.append(imageShared)
+                
+                        sheet.toggle()
+                    }) {
+                        Image(systemName: "square.and.arrow.up")
+                            .padding(.leading, 10)
+                            .padding(.bottom, 3)
+                            .foregroundColor(.indigo)
+                    }
+                    .sheet(isPresented: $sheet, content: {
+                        ShareSheet(items: items)
+                    })
+                    
+                    NavigationLink(destination: OnboardingView()) {
+                        Text("Done")
+                            .foregroundColor(.indigo)
+                    }
+                    
+                }
+            }
+        }
     }
 }
 
@@ -65,3 +72,4 @@ struct ShareSheet : UIViewControllerRepresentable {
         return controller
     }
 }
+

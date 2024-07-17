@@ -11,12 +11,13 @@ struct ReadingGoalView: View {
     @State private var selectedTime = Date()
     @State private var isOn: Bool = false
     @State private var isReminderAppear: Bool = false
+    @Binding var isGoalModalPresented: Bool
     
     var body: some View {
         NavigationView {
             VStack (alignment: .leading){
                 Button(action: {
-                    
+                    isGoalModalPresented = false
                 }) {
                     Text("Save")
                     .frame(maxWidth: .infinity, alignment: .trailing)
@@ -118,6 +119,6 @@ struct ReadingGoalView: View {
     
 }
 
-#Preview {
-    ReadingGoalView()
-}
+//#Preview {
+//    ReadingGoalView(isGoalModalPresented: $isGoalModalPresented)
+//}
