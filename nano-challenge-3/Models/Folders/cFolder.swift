@@ -4,7 +4,7 @@ import SwiftData
 @Model final class Folders : Identifiable, Hashable {
     
     var name     : String
-    var contains : [Note]
+    @Relationship(deleteRule: .cascade) var contains : [Note]
     var count    : Int {
         contains.count
     }

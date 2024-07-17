@@ -1,11 +1,34 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "Add paragraph" : {
+    "" : {
 
     },
     "Change block style" : {
 
+    },
+    "Delete" : {
+
+    },
+    "Duration" : {
+
+    },
+    "ls.button.add-note-paragraph" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add Paragraph"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paragraf Baru"
+          }
+        }
+      }
     },
     "ls.button.redirect-to-habit-view" : {
       "extractionState" : "manual",
@@ -66,6 +89,12 @@
             "state" : "translated",
             "value" : "Add"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tambah"
+          }
         }
       }
     },
@@ -77,6 +106,12 @@
             "state" : "translated",
             "value" : "Cancel"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gajadi"
+          }
         }
       }
     },
@@ -87,6 +122,29 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Done"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selesai"
+          }
+        }
+      }
+    },
+    "ls.cta.save" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Simpan"
           }
         }
       }
@@ -166,6 +224,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "New Folder"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Folder Baru"
           }
         }
       }
@@ -272,7 +336,10 @@
         }
       }
     },
-    "Save" : {
+    "Reading time" : {
+
+    },
+    "Reminder" : {
 
     }
   },
