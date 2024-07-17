@@ -10,6 +10,9 @@
     "%lld sold" : {
 
     },
+    "00.00" : {
+
+    },
     "8" : {
       "localizations" : {
         "id" : {
@@ -601,6 +604,9 @@
       }
     },
     "Reading time" : {
+
+    },
+    "Reading Time" : {
 
     },
     "Reminder" : {

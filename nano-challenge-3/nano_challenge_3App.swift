@@ -27,7 +27,7 @@ struct nano_challenge_3App: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RedesignNoteView()
         }.modelContainer(sharedModelContainer)
     }
 }
