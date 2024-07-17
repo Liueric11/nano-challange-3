@@ -16,11 +16,11 @@ struct RedesignNoteView: View {
     @State private var title: String = ""
     @State private var text: String = ""
     @State private var selectedOption: FileType? = nil
-    @State private var navigateToAnotherPage = false
+    @State private var navigateToShareView = false
     
     func startTimer() {
         isTimerRunning = true
-        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
+        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
             secondsElapsed += 1
         }
     }
@@ -38,8 +38,8 @@ struct RedesignNoteView: View {
     }
     
     var body: some View {
-        VStack{
-            HStack{
+        VStack {
+            HStack {
                 VStack(alignment: .leading) {
                     Text("Reading Time")
                         .font(.callout)
@@ -55,13 +55,13 @@ struct RedesignNoteView: View {
                 Spacer()
                 
                 Picker("Reading Type", selection: $selectedOption) {
-                    Text("Type of reading").tag(FileType?.none)
-                    ForEach(FileType.allCases) { option in
+                    Text("Type of reading").tag(nil as FileType?)
+                    ForEach(FileType.allCases, id: \.self) { option in
                         Text(option.rawValue)
                             .font(.body)
                             .fontWeight(.semibold)
                             .foregroundColor(.indigo)
-                            .tag(Optional(option))
+                            .tag(option)
                     }
                 }
                 .pickerStyle(.menu)
@@ -83,7 +83,7 @@ struct RedesignNoteView: View {
         }
         .background(Color(.systemGroupedBackground))
         .toolbar {
-            ToolbarItemGroup(placement: .topBarTrailing) {
+            ToolbarItem(placement: .navigationBarTrailing) {
                 Button(action: {
                     submit()
                 }) {
@@ -96,26 +96,29 @@ struct RedesignNoteView: View {
         }
         .background(
             NavigationLink(
-                destination: ReadingGoalView(),
-                isActive: $navigateToAnotherPage,
+                destination: ShareView(secondsElapsed: secondsElapsed, title: title, text: text),
+                isActive: $navigateToShareView,
                 label: {
                     EmptyView()
                 })
         )
-        .toolbarTitleDisplayMode(.inline)
+        .navigationBarTitle("New Note")
     }
     
     func submit() {
-        let newFile = FileModel(title: title, type: selectedOption ?? FileType.book, content: text)
+        let newFile = FileModel(title: title, type: selectedOption ?? .book, content: text)
         let newRecord = RecordModel(minutes: secondsElapsed)
         modelContext.insert(newFile)
         modelContext.insert(newRecord)
-        navigateToAnotherPage = true
+        stopTimer()
+        navigateToShareView = true
     }
 }
 
-#Preview {
-    NavigationStack{
-        RedesignNoteView()
+struct RedesignNoteView_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationView {
+            RedesignNoteView()
+        }
     }
 }

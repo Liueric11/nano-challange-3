@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct SharedImageView: View {
+    let secondsElapsed: Int
+    let title: String
+    let text: String
+    
     var body: some View {
         VStack (spacing: 24){
             ZStack {
@@ -21,7 +25,7 @@ struct SharedImageView: View {
                         .font(.system(size: 20))
                     
                     HStack (alignment: .firstTextBaseline){
-                        Text("10")
+                        Text("\(secondsElapsed/60)")
                             .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                             .font(.system(size: 22))
                             .foregroundColor(.indigo)
@@ -29,9 +33,9 @@ struct SharedImageView: View {
                             .font(.system(size: 17))
                             .foregroundColor(Color(UIColor.secondaryLabel))
                     }
-                } 
+                }
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.leading, 33)
+                .padding(.leading, 20)
             }
             
             ZStack {
@@ -40,15 +44,30 @@ struct SharedImageView: View {
                     .foregroundColor(Color(UIColor.secondarySystemGroupedBackground))
                     .cornerRadius(10)
                 
-                Text("Jika diumpamakan sekeping koin tidak bisa menjadikan kaya, suatu perubahan positif seperti meditasi selama satu menit. When you fall in love with the process rather than the product, you don’t have to wait to give yourself permission to be happy. You can be satisfied anytime your system is running. And a system can be successful in many different forms, not just the one you first envision. Pada umumnya, perubahan-perubahan kecil seringkali terkesan tak bermakna karena tidak langsung membawa perubahan nyata pada hidup suatu manusia.")
-                    .frame(width: 330, height: 525, alignment: .topLeading)
+                VStack (alignment: .leading){
+                    Text("\(title)")
+                        .bold()
+                        .font(.system(size: 22))
+                    Text("\(text)")
+                }
+                .frame(width: 330, height: 525, alignment: .topLeading)
+                
             }
         }
+        .padding()
+        .padding()
+        .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color(.systemGroupedBackground))
+        
     }
 }
 
-#Preview {
-    SharedImageView()
+struct SharedImageView_Previews: PreviewProvider {
+    static var previews: some View {
+        SharedImageView(secondsElapsed: 120, title: "Sample Title", text: "This is a sample text.")
+    }
 }
+
+
+

@@ -15,7 +15,7 @@ struct FilesView: View {
     var body: some View {
             List {
                 ForEach(files) { file in
-                    NavigationLink(destination: ReadingGoalView()) {
+                    NavigationLink(destination: ReadingGoalView(isGoalModalPresented: .constant(false))) {
                         HStack {
                             Image(systemName: "book")
                                 .foregroundColor(.indigo)

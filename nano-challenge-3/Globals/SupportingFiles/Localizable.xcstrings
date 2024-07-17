@@ -34,6 +34,7 @@
       }
     },
     "10" : {
+      "extractionState" : "stale",
       "localizations" : {
         "id" : {
           "stringUnit" : {
@@ -166,9 +167,6 @@
         }
       }
     },
-    "Centered Title" : {
-
-    },
     "Change block style" : {
 
     },
@@ -215,10 +213,11 @@
         }
       }
     },
-    "Dismiss" : {
+    "Done" : {
 
     },
     "Duration" : {
+      "extractionState" : "stale",
       "localizations" : {
         "id" : {
           "stringUnit" : {
@@ -287,9 +286,6 @@
           }
         }
       }
-    },
-    "Jika diumpamakan sekeping koin tidak bisa menjadikan kaya, suatu perubahan positif seperti meditasi selama satu menit. When you fall in love with the process rather than the product, you don’t have to wait to give yourself permission to be happy. You can be satisfied anytime your system is running. And a system can be successful in many different forms, not just the one you first envision. Pada umumnya, perubahan-perubahan kecil seringkali terkesan tak bermakna karena tidak langsung membawa perubahan nyata pada hidup suatu manusia." : {
-
     },
     "ls.button.add-note-paragraph" : {
       "extractionState" : "manual",
@@ -654,10 +650,10 @@
         }
       }
     },
-    "modal view" : {
+    "Never" : {
 
     },
-    "Never" : {
+    "New Note" : {
 
     },
     "Next Reading" : {
@@ -692,6 +688,9 @@
           }
         }
       }
+    },
+    "Preview" : {
+
     },
     "Quote Selected Text" : {
 
@@ -730,6 +729,9 @@
         }
       }
     },
+    "Reading Type" : {
+
+    },
     "Recently Deleted" : {
       "localizations" : {
         "id" : {
@@ -739,9 +741,6 @@
           }
         }
       }
-    },
-    "Reading Type" : {
-
     },
     "Reminder" : {
       "localizations" : {
