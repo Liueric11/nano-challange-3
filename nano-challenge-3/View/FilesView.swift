@@ -26,6 +26,11 @@ struct FilesView: View {
                                 .lineLimit(1)
                                 .truncationMode(.tail)
                         }
+                        .swipeActions {
+                            Button("Delete", systemImage: "trash", role: .destructive) {
+                                modelContext.delete(file)
+                            }
+                        }
                     }
                 }
             }

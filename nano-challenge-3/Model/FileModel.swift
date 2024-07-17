@@ -18,6 +18,20 @@ enum FileType: String, CaseIterable, Identifiable {
     var id: String { rawValue }
 }
 
+enum RepeatType: String, CaseIterable, Identifiable {
+    case never = "Never"
+    case sunday = "Every Sunday"
+    case monday = "Every Monday"
+    case tuesday = "Every Tuesday"
+    case wednesday = "Every Wednesday"
+    case thursday = "Every Thursday"
+    case friday = "Every Friday"
+    case saturday = "Every Saturday"
+    case everyday = "Everyday"
+    
+    var id: String { rawValue }
+}
+
 @Model 
 final class FileModel: Identifiable {
     var id: UUID

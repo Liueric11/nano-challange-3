@@ -10,10 +10,17 @@
     "%lld" : {
 
     },
+    "%lld hour" : {
+
+    },
+    "%lld min" : {
+
+    },
     "%lld sold" : {
 
     },
     "8" : {
+      "extractionState" : "stale",
       "localizations" : {
         "id" : {
           "stringUnit" : {
@@ -45,6 +52,7 @@
       }
     },
     "20.00" : {
+      "extractionState" : "stale",
       "localizations" : {
         "id" : {
           "stringUnit" : {
@@ -114,10 +122,8 @@
         }
       }
     },
-    "Add New Record" : {
-
-    },
     "Alarm" : {
+      "extractionState" : "stale",
       "localizations" : {
         "id" : {
           "stringUnit" : {
@@ -213,6 +219,9 @@
         }
       }
     },
+    "Delete" : {
+
+    },
     "Done" : {
 
     },
@@ -266,6 +275,9 @@
           }
         }
       }
+    },
+    "Hours" : {
+
     },
     "hours per day" : {
       "localizations" : {
@@ -650,9 +662,6 @@
         }
       }
     },
-    "Never" : {
-
-    },
     "New Note" : {
 
     },
@@ -692,10 +701,10 @@
     "Preview" : {
 
     },
-    "Quote Selected Text" : {
+    "Read every day, set your goals, and embrace your reading journey" : {
 
     },
-    "Read every day, set your goals, and embrace your reading journey " : {
+    "Reading Goal" : {
 
     },
     "Reading Habit" : {
@@ -753,6 +762,7 @@
       }
     },
     "Repeat" : {
+      "extractionState" : "stale",
       "localizations" : {
         "id" : {
           "stringUnit" : {
@@ -809,6 +819,7 @@
       }
     },
     "Tonight" : {
+      "extractionState" : "stale",
       "localizations" : {
         "id" : {
           "stringUnit" : {

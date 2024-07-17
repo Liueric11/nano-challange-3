@@ -9,6 +9,11 @@ import SwiftUI
 
 struct YourReadingGoal: View {
     @State private var isGoalModalPresented = false
+    @State private var selectedHour: Int = UserDefaults.standard.integer(forKey: "selectedHour")
+    @State private var selectedMinute: Int = UserDefaults.standard.integer(forKey: "selectedMinute")
+    @State private var isReminder: Bool = UserDefaults.standard.bool(forKey: "isReminder")
+    @State private var selectedRepeat: RepeatType? = RepeatType(rawValue: UserDefaults.standard.string(forKey: "selectedRepeat") ?? "")
+    @State private var selectedTimeRepeat: Date = UserDefaults.standard.object(forKey: "selectedTimeRepeat") as? Date ?? Date()
     
     var body: some View {
         VStack {
@@ -26,7 +31,7 @@ struct YourReadingGoal: View {
                   .cornerRadius(10)
                 
                 VStack {
-                    HStack(alignment: .firstTextBaseline, spacing: 50){
+                    HStack(alignment: .firstTextBaseline){
                         VStack(alignment: .leading) {
                             HStack{
                                 Image(systemName: "flag.checkered")
@@ -38,7 +43,7 @@ struct YourReadingGoal: View {
                             .padding(.bottom, 10)
                             
                             HStack{
-                                Text("8")
+                                Text("\(selectedHour)")
                                     .font(.system(size: 20))
                                     .bold()
                             }
@@ -49,26 +54,28 @@ struct YourReadingGoal: View {
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
                         
-                        VStack(alignment: .leading){
-                            HStack{
-                                Image(systemName: "book")
-                                    .font(.system(size: 15))
-                                Text("Next Reading")
+                        if isReminder {
+                            VStack(alignment: .leading){
+                                HStack{
+                                    Image(systemName: "book")
+                                        .font(.system(size: 15))
+                                    Text("Next Reading")
+                                        .font(.system(size: 15))
+                                        .foregroundColor(Color(UIColor.secondaryLabel))
+                                }
+                                .padding(.bottom, 10)
+                                
+                                Text("\(formattedTime(from: selectedTimeRepeat))")
+                                    .bold()
+                                    .font(.system(size: 20))
+                                
+                                Text("\(selectedRepeat?.rawValue ?? "Everday")")
                                     .font(.system(size: 15))
                                     .foregroundColor(Color(UIColor.secondaryLabel))
+                                    
                             }
-                            .padding(.bottom, 10)
-                            
-                            Text("20.00")
-                                .bold()
-                                .font(.system(size: 20))
-                            
-                            Text("Tonight")
-                                .font(.system(size: 15))
-                                .foregroundColor(Color(UIColor.secondaryLabel))
-                                
+                            .frame(maxWidth: .infinity, alignment: .leading)
                         }
-                        .frame(maxWidth: .infinity, alignment: .leading)
                     }
                     .padding(.leading, 20)
                     
@@ -96,6 +103,12 @@ struct YourReadingGoal: View {
         .sheet(isPresented: $isGoalModalPresented) {
             ReadingGoalView(isGoalModalPresented: $isGoalModalPresented)
         }
+    }
+    
+    private func formattedTime(from date: Date) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "HH:mm"
+        return dateFormatter.string(from: date)
     }
 }
 

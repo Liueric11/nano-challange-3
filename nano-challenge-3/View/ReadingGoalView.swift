@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct ReadingGoalView: View {
-    @State private var selectedTime = Date()
-    @State private var isOn: Bool = false
-    @State private var isReminderAppear: Bool = false
+    @State private var selectedHour: Int = UserDefaults.standard.integer(forKey: "selectedHour")
+    @State private var selectedMinute: Int = UserDefaults.standard.integer(forKey: "selectedMinute")
+    @State private var isReminder: Bool = UserDefaults.standard.bool(forKey: "isReminder")
+    @State private var selectedRepeat: RepeatType? = RepeatType(rawValue: UserDefaults.standard.string(forKey: "selectedRepeat") ?? "")
+    @State private var selectedTimeRepeat: Date = UserDefaults.standard.object(forKey: "selectedTimeRepeat") as? Date ?? Date()
     @Binding var isGoalModalPresented: Bool
     
     var body: some View {
@@ -25,27 +27,41 @@ struct ReadingGoalView: View {
                     .fontWeight(.regular)
                     .foregroundColor(.secondary)
                 
-                ZStack{
-                    DatePicker("Select a time", selection: $selectedTime, displayedComponents: .hourAndMinute)
-                        .datePickerStyle(WheelDatePickerStyle())
-                        .labelsHidden()
-                        .padding(.bottom, 30)
-                        .frame(maxWidth: .infinity, alignment: .center)
+                
+                HStack(spacing: 0){
+                    Picker("Hours", selection: $selectedHour) {
+                        ForEach(0..<6) { hour in
+                            Text("\(hour) hour")
+                                .tag(hour)
+                        }
+                    }
+                    .pickerStyle(.wheel)
+                    .frame(width: 100)
+                    .clipped()
+                    
+                    Picker("Minutes", selection: $selectedMinute) {
+                        ForEach(0..<60) { minute in
+                            Text("\(minute) min")
+                                .tag(minute)
+                        }
+                    }
+                    .pickerStyle(.wheel)
+                    .frame(width: 100)
+                    .clipped()
                     
                     Text("per day")
-                        .padding(.bottom, 30)
-                        .padding(.leading, 200)
                         .font(.title2)
                         .fontWeight(.regular)
                 }
                 
-                Toggle(isOn: $isOn) {
+                Toggle(isOn: $isReminder) {
                     Text("Reminder")
                         .font(.title3)
                         .fontWeight(.semibold)
                 }
                 .padding(0)
-                if isOn {
+                
+                if isReminder {
                     List {
                         HStack {
                             Text("Time")
@@ -54,23 +70,21 @@ struct ReadingGoalView: View {
                             
                             Spacer()
                             
-                            DatePicker("Select a time", selection: $selectedTime, displayedComponents: .hourAndMinute)
+                            DatePicker("Select a time", selection: $selectedTimeRepeat, displayedComponents: .hourAndMinute)
                                 .labelsHidden()
                         }
-                        HStack {
-                            Text("Repeat")
-                                .font(.system(size: 17))
-                            Spacer()
-                            Text("Never")
-                                .font(.system(size: 17))
-                                .foregroundColor(.secondary)
-                            Image(systemName: "chevron.right")
-                                .font(
-                                    Font.custom("SF Pro", size: 17)
-                                        .weight(.semibold)
-                                )
-                                .foregroundColor(Color(UIColor.tertiaryLabel))
+                        
+                        Picker("Reading Type", selection: $selectedRepeat) {
+                            ForEach(RepeatType.allCases) { option in
+                                Text(option.rawValue)
+                                    .font(.body)
+                                    .fontWeight(.semibold)
+                                    .foregroundColor(.indigo)
+                                    .tag(Optional(option))
+                            }
                         }
+                        .pickerStyle(.navigationLink)
+                        .padding(0)
                     }
                     .listStyle(.plain)
                     .transition(.slide)
@@ -83,6 +97,7 @@ struct ReadingGoalView: View {
             .toolbar {
                 ToolbarItemGroup(placement: .topBarTrailing) {
                     Button(action: {
+                        saveToUserDefaults()
                         isGoalModalPresented = false
                     }) {
                         Text("Save")
@@ -98,10 +113,11 @@ struct ReadingGoalView: View {
         }
     }
     
-    private func formatTime(_ date: Date) -> String {
-        let formatter = DateFormatter()
-        formatter.timeStyle = .short
-        return formatter.string(from: date)
+    private func saveToUserDefaults() {
+        UserDefaults.standard.set(selectedHour, forKey: "selectedHour")
+        UserDefaults.standard.set(selectedMinute, forKey: "selectedMinute")
+        UserDefaults.standard.set(isReminder, forKey: "isReminder")
+        UserDefaults.standard.set(selectedRepeat?.rawValue, forKey: "selectedRepeat")
+        UserDefaults.standard.set(selectedTimeRepeat, forKey: "selectedTimeRepeat")
     }
-    
 }

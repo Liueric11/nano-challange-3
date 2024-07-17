@@ -12,11 +12,11 @@ import SwiftData
 final class RecordModel: Identifiable {
     var id: UUID
     var date: Date
-    var minutes: Int
+    var seconds: Int
     
-    init(minutes: Int) {
+    init(seconds: Int) {
         self.id = UUID()
         self.date = Date()
-        self.minutes = minutes
+        self.seconds = seconds
     }
 }
