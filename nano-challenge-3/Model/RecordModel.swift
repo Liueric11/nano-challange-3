@@ -11,18 +11,12 @@ import SwiftData
 @Model
 final class RecordModel: Identifiable {
     var id: UUID
-    var fieldId: UUID
-    var openedAt: Date
-    var closedAt: Date? = nil
+    var date: Date
+    var minutes: Int
     
-    var duration: TimeInterval {
-        guard let closedAt = closedAt else { return 0 }
-        return closedAt.timeIntervalSince1970.rounded(.down) - openedAt.timeIntervalSince1970.rounded(.down)
-    }
-    
-    init(fieldId: UUID) {
+    init(minutes: Int) {
         self.id = UUID()
-        self.fieldId = fieldId
-        self.openedAt = Date()
+        self.date = Date()
+        self.minutes = minutes
     }
 }

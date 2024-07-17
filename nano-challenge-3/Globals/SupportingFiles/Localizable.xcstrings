@@ -4,13 +4,13 @@
     "" : {
 
     },
+    "%@" : {
+
+    },
     "%lld" : {
 
     },
     "%lld sold" : {
-
-    },
-    "00.00" : {
 
     },
     "8" : {
@@ -72,6 +72,9 @@
           }
         }
       }
+    },
+    "Add New Record" : {
+
     },
     "Alarm" : {
 
@@ -142,13 +145,7 @@
         }
       }
     },
-    "Delete" : {
-
-    },
     "Dismiss" : {
-
-    },
-    "Duration" : {
 
     },
     "Edit" : {
@@ -609,6 +606,9 @@
     "Reading Time" : {
 
     },
+    "Reading Type" : {
+
+    },
     "Reminder" : {
 
     },
@@ -662,6 +662,9 @@
           }
         }
       }
+    },
+    "Type of reading" : {
+
     },
     "W" : {
 

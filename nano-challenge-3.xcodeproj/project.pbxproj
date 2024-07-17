@@ -52,6 +52,7 @@
 		D9AEA6EE2C47F5470077A303 /* FileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AEA6ED2C47F5470077A303 /* FileModel.swift */; };
 		D9AEA6F02C47FC2A0077A303 /* RecordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AEA6EF2C47FC2A0077A303 /* RecordModel.swift */; };
 		D9AEA6F22C4825720077A303 /* FilesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AEA6F12C4825720077A303 /* FilesView.swift */; };
+		D9AEA6F42C483D0E0077A303 /* UITextViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AEA6F32C483D0E0077A303 /* UITextViewRepresentable.swift */; };
 		D9E676D82C456B960054A8CC /* sAppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E676B32C456B960054A8CC /* sAppConfig.swift */; };
 		D9E676D92C456B960054A8CC /* sUIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E676B42C456B960054A8CC /* sUIConfig.swift */; };
 		D9E676DA2C456B960054A8CC /* fDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E676B62C456B960054A8CC /* fDebug.swift */; };
@@ -118,6 +119,7 @@
 		D9AEA6ED2C47F5470077A303 /* FileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileModel.swift; sourceTree = "<group>"; };
 		D9AEA6EF2C47FC2A0077A303 /* RecordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordModel.swift; sourceTree = "<group>"; };
 		D9AEA6F12C4825720077A303 /* FilesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesView.swift; sourceTree = "<group>"; };
+		D9AEA6F32C483D0E0077A303 /* UITextViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewRepresentable.swift; sourceTree = "<group>"; };
 		D9E676B32C456B960054A8CC /* sAppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sAppConfig.swift; sourceTree = "<group>"; };
 		D9E676B42C456B960054A8CC /* sUIConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sUIConfig.swift; sourceTree = "<group>"; };
 		D9E676B62C456B960054A8CC /* fDebug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fDebug.swift; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 				D90D1F392C47B89C004AA48F /* MonthlySalesChart.swift */,
 				D90D1F3A2C47B89C004AA48F /* WeeklySalesChart.swift */,
 				D90D1F3B2C47B89C004AA48F /* YourReadingGoal.swift */,
+				D9AEA6F32C483D0E0077A303 /* UITextViewRepresentable.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -506,6 +509,7 @@
 				D90D1F4E2C47B97A004AA48F /* ReadingGoalView.swift in Sources */,
 				D90D1F0C2C47B324004AA48F /* sFolderSelection.swift in Sources */,
 				D90D1F612C47BEF4004AA48F /* sNoteAccessRecord.swift in Sources */,
+				D9AEA6F42C483D0E0077A303 /* UITextViewRepresentable.swift in Sources */,
 				D90D1F112C47B324004AA48F /* sCollectionOfNoteBlocks.swift in Sources */,
 				D90D1F652C47C0A3004AA48F /* sNoteBlockStyle.swift in Sources */,
 				D90D1F3C2C47B89C004AA48F /* BadgesCollection.swift in Sources */,

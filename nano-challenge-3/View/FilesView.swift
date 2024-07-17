@@ -13,7 +13,6 @@ struct FilesView: View {
     @Query private var files: [FileModel]
     
     var body: some View {
-        NavigationStack {
             List {
                 ForEach(files) { file in
                     NavigationLink(destination: ReadingGoalView()) {
@@ -30,12 +29,13 @@ struct FilesView: View {
                     }
                 }
             }
+            .background(Color(.systemGroupedBackground))
             .navigationTitle("Reading Habit")
             .toolbar {
                 ToolbarItemGroup(placement: .bottomBar) {
                     HStack {
                         Spacer()
-                        NavigationLink(destination: ReadingGoalView()) {
+                        NavigationLink(destination: RedesignNoteView()) {
                             Image(systemName: "square.and.pencil")
                                 .resizable()
                                 .frame(width: 28, height: 28)
@@ -45,10 +45,11 @@ struct FilesView: View {
                 }
             }
             .searchable(text: .constant(""))
-        }
     }
 }
 
 #Preview {
-    FilesView()
+    NavigationStack {
+        FilesView()
+    }
 }

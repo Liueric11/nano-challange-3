@@ -12,7 +12,7 @@ struct OnboardingView: View {
     @ObservedObject var viewModel = HabitViewModel()
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack {
                 ReadingTimeOnboarding()
                 
