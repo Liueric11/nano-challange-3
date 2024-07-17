@@ -14,18 +14,18 @@ struct ChartView: View {
     @Query private var notes: [Note]
     
     func addNote() {
-        let newDate = Date()
-        
-        let attempts = NoteAccessRecord(openedAt: Date(), closedAt: Date().addingTimeInterval(300))
-
-        let newNote = Note(
-            content: [],
-            filename: "apa ini",
-            createdAt: newDate,
-            isPinned: false,
-            attempts: [attempts]
-        )
-        modelContext.insert(newNote)
+//        let newDate = Date()
+//        
+//        let attempts = NoteAccessRecord(openedAt: Date(), closedAt: Date().addingTimeInterval(300))
+//
+//        let newNote = Note(
+//            content: [],
+//            filename: "apa ini",
+//            createdAt: newDate,
+//            isPinned: false,
+//            attempts: [attempts]
+//        )
+//        modelContext.insert(newNote)
     }
                                  
     var body: some View {

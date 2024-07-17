@@ -1,7 +1,7 @@
 import Foundation
 import SwiftData
 
-@Model final class Folders : Identifiable, Hashable {
+@Model final class Folder : Identifiable, Hashable {
     
     var name     : String
     @Relationship(deleteRule: .cascade) var contains : [Note]
@@ -21,14 +21,14 @@ import SwiftData
         )
     }
     
-    static func == ( lhs: Folders, rhs: Folders ) -> Bool {
+    static func == ( lhs: Folder, rhs: Folder ) -> Bool {
         lhs.id == rhs.id
     }
     
 }
 
 // MARK: - Creation Chaining Methods
-extension Folders {
+extension Folder {
     
     /// Returns the object whose this method is chained to, with its ``contains`` attribute filled with the supplied argument.
     func withContentOf ( _ n: [Note] ) -> Self {

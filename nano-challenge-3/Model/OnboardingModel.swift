@@ -15,7 +15,7 @@ struct Habit {
     var totalHours: Int
 }
 
-struct Folder {
+struct FolderItem {
     var icon: String
     var name: String
     var count: Int

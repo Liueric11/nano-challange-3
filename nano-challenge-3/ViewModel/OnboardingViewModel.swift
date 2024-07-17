@@ -18,9 +18,9 @@ class HabitViewModel: ObservableObject {
     )
     
     @Published var folders = [
-        Folder(icon: "folder", name: "All iCloud", count: 26),
-        Folder(icon: "note.text", name: "Notes", count: 22),
-        Folder(icon: "trash", name: "Recently Deleted", count: 9)
+        FolderItem(icon: "folder", name: "All iCloud", count: 26),
+        FolderItem(icon: "note.text", name: "Notes", count: 22),
+        FolderItem(icon: "trash", name: "Recently Deleted", count: 9)
     ]
     
     @Published var habitList = ""
