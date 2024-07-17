@@ -199,6 +199,29 @@
     "ini view yang dishare" : {
 
     },
+    "Delete" : {
+
+    },
+    "Duration" : {
+
+    },
+    "ls.button.add-note-paragraph" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add Paragraph"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paragraf Baru"
+          }
+        }
+      }
+    },
     "ls.button.redirect-to-habit-view" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -297,6 +320,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Selesai"
+          }
+        }
+      }
+    },
+    "ls.cta.save" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Simpan"
           }
         }
       }
