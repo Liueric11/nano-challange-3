@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "" : {
+
+    },
     "%lld" : {
 
     },
@@ -67,7 +70,7 @@
         }
       }
     },
-    "Add New Record" : {
+    "Alarm" : {
 
     },
     "Average" : {
@@ -99,6 +102,9 @@
           }
         }
       }
+    },
+    "Change block style" : {
+
     },
     "Collect your badge then reading became your habit." : {
 
@@ -133,7 +139,13 @@
         }
       }
     },
+    "Delete" : {
+
+    },
     "Dismiss" : {
+
+    },
+    "Duration" : {
 
     },
     "Edit" : {
@@ -197,12 +209,6 @@
       }
     },
     "ini view yang dishare" : {
-
-    },
-    "Delete" : {
-
-    },
-    "Duration" : {
 
     },
     "ls.button.add-note-paragraph" : {
@@ -561,6 +567,9 @@
     "modal view" : {
 
     },
+    "Never" : {
+
+    },
     "Next Reading" : {
       "localizations" : {
         "id" : {
@@ -574,6 +583,12 @@
     "of %lld hours" : {
 
     },
+    "per day" : {
+
+    },
+    "Read every day, set your goals, and embrace your reading journey " : {
+
+    },
     "Reading Habit" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -585,13 +600,31 @@
         }
       }
     },
-    "Show Modal" : {
+    "Reading time" : {
+
+    },
+    "Reminder" : {
+
+    },
+    "Repeat" : {
+
+    },
+    "Save" : {
+
+    },
+    "Select a time" : {
+
+    },
+    "Set Your Reading Goal" : {
 
     },
     "Show Transactions" : {
 
     },
     "Style" : {
+
+    },
+    "Time" : {
 
     },
     "Tonight" : {

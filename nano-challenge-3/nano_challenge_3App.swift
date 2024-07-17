@@ -13,7 +13,8 @@ struct nano_challenge_3App: App {
     
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Note.self
+            Note.self,
+            Folder.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 

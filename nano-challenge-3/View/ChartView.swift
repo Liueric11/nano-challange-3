@@ -44,15 +44,16 @@ struct ChartView: View {
                             .padding()
                     }
                     
-                    Button(action: {
-                        addNote()
-                    }) {
-                        Text("Add New Record")
-                    }
+//                    Button(action: {
+//                        addNote()
+//                    }) {
+//                        Text("Add New Record")
+//                    }
 
                     
                     YourReadingGoal()
                         .padding(.bottom, 30)
+                        .padding(.top, 15)
                     
                     BadgesCollection()
                     

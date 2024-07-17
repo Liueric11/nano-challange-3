@@ -6,7 +6,7 @@ struct NoteCreationView: View {
     @Bindable var folderReferer : Folder
     
     init ( referer: Bindable<Folder> ) {
-        var note = Note()
+        let note = Note()
         self.editView = NoteView(displays: note)
         self.note = note
         self._folderReferer = referer

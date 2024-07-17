@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BEFD52D02C47DACB00E5D1F0 /* RedesignNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFD52CF2C47DACB00E5D1F0 /* RedesignNoteView.swift */; };
 		D90D1EF22C47B282004AA48F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D1EF12C47B282004AA48F /* ViewModel.swift */; };
 		D90D1EF52C47B2AF004AA48F /* sUserDefaultsNaming.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D1EF42C47B2AF004AA48F /* sUserDefaultsNaming.swift */; };
 		D90D1EF72C47B2D9004AA48F /* sReadingGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D1EF62C47B2D9004AA48F /* sReadingGoal.swift */; };
@@ -69,6 +70,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BEFD52CF2C47DACB00E5D1F0 /* RedesignNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedesignNoteView.swift; sourceTree = "<group>"; };
 		D90D1EF12C47B282004AA48F /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		D90D1EF42C47B2AF004AA48F /* sUserDefaultsNaming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sUserDefaultsNaming.swift; sourceTree = "<group>"; };
 		D90D1EF62C47B2D9004AA48F /* sReadingGoal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sReadingGoal.swift; sourceTree = "<group>"; };
@@ -364,14 +366,15 @@
 		D9E676D02C456B960054A8CC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D90D1F472C47B97A004AA48F /* BadgeCollectionView.swift */,
+				D90D1F302C47B89C004AA48F /* Component */,
+				D9E676D32C456B960054A8CC /* OnboardingView.swift */,
+				D9E676D12C456B960054A8CC /* ChartView.swift */,
 				D90D1F482C47B97A004AA48F /* ReadingGoalView.swift */,
 				D90D1F492C47B97A004AA48F /* SharedBadgesView.swift */,
 				D90D1F4A2C47B97A004AA48F /* SharedImageView.swift */,
 				D90D1F4B2C47B97A004AA48F /* ShareView.swift */,
-				D90D1F302C47B89C004AA48F /* Component */,
-				D9E676D32C456B960054A8CC /* OnboardingView.swift */,
-				D9E676D12C456B960054A8CC /* ChartView.swift */,
+				D90D1F472C47B97A004AA48F /* BadgeCollectionView.swift */,
+				BEFD52CF2C47DACB00E5D1F0 /* RedesignNoteView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -483,6 +486,7 @@
 				D90D1F122C47B324004AA48F /* sNoteView.swift in Sources */,
 				D9E676D92C456B960054A8CC /* sUIConfig.swift in Sources */,
 				D90D1F132C47B324004AA48F /* cClock.swift in Sources */,
+				BEFD52D02C47DACB00E5D1F0 /* RedesignNoteView.swift in Sources */,
 				D90D1F0A2C47B324004AA48F /* sFolderCreationSheet.swift in Sources */,
 				D9E676F02C456B960054A8CC /* Utils.swift in Sources */,
 				D9E676E92C456B960054A8CC /* xLogger.swift in Sources */,
@@ -652,7 +656,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"nano-challenge-3/Preview Content\"";
-				DEVELOPMENT_TEAM = 8DJ64TD7VC;
+				DEVELOPMENT_TEAM = 7Z75T55G26;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -681,7 +685,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"nano-challenge-3/Preview Content\"";
-				DEVELOPMENT_TEAM = 8DJ64TD7VC;
+				DEVELOPMENT_TEAM = 7Z75T55G26;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

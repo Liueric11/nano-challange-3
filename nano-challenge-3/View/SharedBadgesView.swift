@@ -50,6 +50,7 @@ struct ShareBadges: View {
                 //                    .foregroundColor(.white)
                 //                    .cornerRadius(10)
                 //            }
+                
             }
         }
         .padding()
