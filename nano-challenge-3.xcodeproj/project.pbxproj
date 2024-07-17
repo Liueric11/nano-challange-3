@@ -7,6 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D90D1EE82C47B1F5004AA48F /* sNoteAccessRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D1EE02C47B1F5004AA48F /* sNoteAccessRecord.swift */; };
+		D90D1EE92C47B1F5004AA48F /* sNoteBlockStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D1EE22C47B1F5004AA48F /* sNoteBlockStyle.swift */; };
+		D90D1EEA2C47B1F5004AA48F /* cNoteParagraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D1EE32C47B1F5004AA48F /* cNoteParagraph.swift */; };
+		D90D1EEB2C47B1F5004AA48F /* sBackgroundForegroundColorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D1EE42C47B1F5004AA48F /* sBackgroundForegroundColorSet.swift */; };
+		D90D1EEC2C47B1F5004AA48F /* eNoteBlockPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D1EE52C47B1F5004AA48F /* eNoteBlockPreset.swift */; };
+		D90D1EED2C47B1F5004AA48F /* cNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D1EE62C47B1F5004AA48F /* cNote.swift */; };
+		D90D1EEE2C47B1F5004AA48F /* cFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D1EE72C47B1F5004AA48F /* cFolder.swift */; };
+		D90D1EF22C47B282004AA48F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D1EF12C47B282004AA48F /* ViewModel.swift */; };
+		D90D1EF52C47B2AF004AA48F /* sUserDefaultsNaming.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D1EF42C47B2AF004AA48F /* sUserDefaultsNaming.swift */; };
+		D90D1EF72C47B2D9004AA48F /* sReadingGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D1EF62C47B2D9004AA48F /* sReadingGoal.swift */; };
+		D90D1F0A2C47B324004AA48F /* sFolderCreationSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D1EFA2C47B324004AA48F /* sFolderCreationSheet.swift */; };
+		D90D1F0B2C47B324004AA48F /* sNoteBlockViewOld.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D1EFC2C47B324004AA48F /* sNoteBlockViewOld.swift */; };
+		D90D1F0C2C47B324004AA48F /* sFolderSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D1EFD2C47B324004AA48F /* sFolderSelection.swift */; };
+		D90D1F0D2C47B324004AA48F /* sNoteSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D1EFE2C47B324004AA48F /* sNoteSelection.swift */; };
+		D90D1F0E2C47B324004AA48F /* sNoteViewOld.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D1EFF2C47B324004AA48F /* sNoteViewOld.swift */; };
+		D90D1F0F2C47B324004AA48F /* sNoteBlockContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D1F002C47B324004AA48F /* sNoteBlockContent.swift */; };
+		D90D1F102C47B324004AA48F /* sNoteCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D1F022C47B324004AA48F /* sNoteCreationView.swift */; };
+		D90D1F112C47B324004AA48F /* sCollectionOfNoteBlocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D1F032C47B324004AA48F /* sCollectionOfNoteBlocks.swift */; };
+		D90D1F122C47B324004AA48F /* sNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D1F042C47B324004AA48F /* sNoteView.swift */; };
+		D90D1F132C47B324004AA48F /* cClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D1F062C47B324004AA48F /* cClock.swift */; };
+		D90D1F142C47B324004AA48F /* sNoteBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D1F072C47B324004AA48F /* sNoteBlock.swift */; };
+		D90D1F152C47B324004AA48F /* cCountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D1F082C47B324004AA48F /* cCountdownTimer.swift */; };
+		D90D1F162C47B324004AA48F /* sFolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D1F092C47B324004AA48F /* sFolderView.swift */; };
 		D9E676D82C456B960054A8CC /* sAppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E676B32C456B960054A8CC /* sAppConfig.swift */; };
 		D9E676D92C456B960054A8CC /* sUIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E676B42C456B960054A8CC /* sUIConfig.swift */; };
 		D9E676DA2C456B960054A8CC /* fDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E676B62C456B960054A8CC /* fDebug.swift */; };
@@ -37,6 +60,29 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D90D1EE02C47B1F5004AA48F /* sNoteAccessRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sNoteAccessRecord.swift; sourceTree = "<group>"; };
+		D90D1EE22C47B1F5004AA48F /* sNoteBlockStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sNoteBlockStyle.swift; sourceTree = "<group>"; };
+		D90D1EE32C47B1F5004AA48F /* cNoteParagraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cNoteParagraph.swift; sourceTree = "<group>"; };
+		D90D1EE42C47B1F5004AA48F /* sBackgroundForegroundColorSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sBackgroundForegroundColorSet.swift; sourceTree = "<group>"; };
+		D90D1EE52C47B1F5004AA48F /* eNoteBlockPreset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = eNoteBlockPreset.swift; sourceTree = "<group>"; };
+		D90D1EE62C47B1F5004AA48F /* cNote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cNote.swift; sourceTree = "<group>"; };
+		D90D1EE72C47B1F5004AA48F /* cFolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cFolder.swift; sourceTree = "<group>"; };
+		D90D1EF12C47B282004AA48F /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		D90D1EF42C47B2AF004AA48F /* sUserDefaultsNaming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sUserDefaultsNaming.swift; sourceTree = "<group>"; };
+		D90D1EF62C47B2D9004AA48F /* sReadingGoal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sReadingGoal.swift; sourceTree = "<group>"; };
+		D90D1EFA2C47B324004AA48F /* sFolderCreationSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sFolderCreationSheet.swift; sourceTree = "<group>"; };
+		D90D1EFC2C47B324004AA48F /* sNoteBlockViewOld.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sNoteBlockViewOld.swift; sourceTree = "<group>"; };
+		D90D1EFD2C47B324004AA48F /* sFolderSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sFolderSelection.swift; sourceTree = "<group>"; };
+		D90D1EFE2C47B324004AA48F /* sNoteSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sNoteSelection.swift; sourceTree = "<group>"; };
+		D90D1EFF2C47B324004AA48F /* sNoteViewOld.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sNoteViewOld.swift; sourceTree = "<group>"; };
+		D90D1F002C47B324004AA48F /* sNoteBlockContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sNoteBlockContent.swift; sourceTree = "<group>"; };
+		D90D1F022C47B324004AA48F /* sNoteCreationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sNoteCreationView.swift; sourceTree = "<group>"; };
+		D90D1F032C47B324004AA48F /* sCollectionOfNoteBlocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sCollectionOfNoteBlocks.swift; sourceTree = "<group>"; };
+		D90D1F042C47B324004AA48F /* sNoteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sNoteView.swift; sourceTree = "<group>"; };
+		D90D1F062C47B324004AA48F /* cClock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cClock.swift; sourceTree = "<group>"; };
+		D90D1F072C47B324004AA48F /* sNoteBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sNoteBlock.swift; sourceTree = "<group>"; };
+		D90D1F082C47B324004AA48F /* cCountdownTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cCountdownTimer.swift; sourceTree = "<group>"; };
+		D90D1F092C47B324004AA48F /* sFolderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sFolderView.swift; sourceTree = "<group>"; };
 		D9E676B32C456B960054A8CC /* sAppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sAppConfig.swift; sourceTree = "<group>"; };
 		D9E676B42C456B960054A8CC /* sUIConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sUIConfig.swift; sourceTree = "<group>"; };
 		D9E676B62C456B960054A8CC /* fDebug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fDebug.swift; sourceTree = "<group>"; };
@@ -78,13 +124,128 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D90D1EDE2C47B1F5004AA48F /* Folders */ = {
+			isa = PBXGroup;
+			children = (
+				D90D1EDF2C47B1F5004AA48F /* Notes */,
+				D90D1EE72C47B1F5004AA48F /* cFolder.swift */,
+			);
+			path = Folders;
+			sourceTree = "<group>";
+		};
+		D90D1EDF2C47B1F5004AA48F /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				D90D1EE02C47B1F5004AA48F /* sNoteAccessRecord.swift */,
+				D90D1EE12C47B1F5004AA48F /* Paragraphs */,
+				D90D1EE62C47B1F5004AA48F /* cNote.swift */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		D90D1EE12C47B1F5004AA48F /* Paragraphs */ = {
+			isa = PBXGroup;
+			children = (
+				D90D1EE22C47B1F5004AA48F /* sNoteBlockStyle.swift */,
+				D90D1EE32C47B1F5004AA48F /* cNoteParagraph.swift */,
+				D90D1EE42C47B1F5004AA48F /* sBackgroundForegroundColorSet.swift */,
+				D90D1EE52C47B1F5004AA48F /* eNoteBlockPreset.swift */,
+			);
+			path = Paragraphs;
+			sourceTree = "<group>";
+		};
+		D90D1EEF2C47B218004AA48F /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				D9E676C62C456B960054A8CC /* cNote.swift */,
+				D9E676C22C456B960054A8CC /* cItem.swift */,
+				D9E676C52C456B960054A8CC /* eNoteBlockPreset.swift */,
+				D9E676C42C456B960054A8CC /* sBackgroundForegroundColorSet.swift */,
+				D9E676C12C456B960054A8CC /* cNoteParagraph.swift */,
+				D9E676C72C456B960054A8CC /* cFolder.swift */,
+				D9E676C32C456B960054A8CC /* sNoteAccessRecord.swift */,
+				D9E676C02C456B960054A8CC /* sNoteBlockStyle.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		D90D1EF02C47B282004AA48F /* DataAccess */ = {
+			isa = PBXGroup;
+			children = (
+				D90D1EF12C47B282004AA48F /* ViewModel.swift */,
+			);
+			path = DataAccess;
+			sourceTree = "<group>";
+		};
+		D90D1EF32C47B2AF004AA48F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				D90D1EF42C47B2AF004AA48F /* sUserDefaultsNaming.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		D90D1EF82C47B324004AA48F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D90D1EF92C47B324004AA48F /* Presenters */,
+				D90D1EFB2C47B324004AA48F /* Components */,
+				D90D1F012C47B324004AA48F /* new */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D90D1EF92C47B324004AA48F /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				D90D1EFA2C47B324004AA48F /* sFolderCreationSheet.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		D90D1EFB2C47B324004AA48F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D90D1EFC2C47B324004AA48F /* sNoteBlockViewOld.swift */,
+				D90D1EFD2C47B324004AA48F /* sFolderSelection.swift */,
+				D90D1EFE2C47B324004AA48F /* sNoteSelection.swift */,
+				D90D1EFF2C47B324004AA48F /* sNoteViewOld.swift */,
+				D90D1F002C47B324004AA48F /* sNoteBlockContent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D90D1F012C47B324004AA48F /* new */ = {
+			isa = PBXGroup;
+			children = (
+				D90D1F022C47B324004AA48F /* sNoteCreationView.swift */,
+				D90D1F032C47B324004AA48F /* sCollectionOfNoteBlocks.swift */,
+				D90D1F042C47B324004AA48F /* sNoteView.swift */,
+				D90D1F052C47B324004AA48F /* Components */,
+				D90D1F092C47B324004AA48F /* sFolderView.swift */,
+			);
+			path = new;
+			sourceTree = "<group>";
+		};
+		D90D1F052C47B324004AA48F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D90D1F062C47B324004AA48F /* cClock.swift */,
+				D90D1F072C47B324004AA48F /* sNoteBlock.swift */,
+				D90D1F082C47B324004AA48F /* cCountdownTimer.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		D9E676B02C456B960054A8CC /* nano-challenge-3 */ = {
 			isa = PBXGroup;
 			children = (
+				D90D1EF82C47B324004AA48F /* Views */,
 				D9E676B12C456B960054A8CC /* Globals */,
 				D9E676BA2C456B960054A8CC /* ViewModel */,
 				D9E676BC2C456B960054A8CC /* Data.swift */,
 				D9E676BD2C456B960054A8CC /* Assets.xcassets */,
+				D90D1EF02C47B282004AA48F /* DataAccess */,
 				D9E676BE2C456B960054A8CC /* Models */,
 				D9E676C82C456B960054A8CC /* Preview Content */,
 				D9E676CA2C456B960054A8CC /* Extensions */,
@@ -101,6 +262,7 @@
 		D9E676B12C456B960054A8CC /* Globals */ = {
 			isa = PBXGroup;
 			children = (
+				D90D1EF32C47B2AF004AA48F /* Constants */,
 				D9E676B22C456B960054A8CC /* Configs */,
 				D9E676B52C456B960054A8CC /* Functions */,
 				D9E676B72C456B960054A8CC /* SupportingFiles */,
@@ -145,24 +307,10 @@
 		D9E676BE2C456B960054A8CC /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D9E676BF2C456B960054A8CC /* NonVisible */,
+				D90D1EF62C47B2D9004AA48F /* sReadingGoal.swift */,
+				D90D1EDE2C47B1F5004AA48F /* Folders */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		D9E676BF2C456B960054A8CC /* NonVisible */ = {
-			isa = PBXGroup;
-			children = (
-				D9E676C02C456B960054A8CC /* sNoteBlockStyle.swift */,
-				D9E676C12C456B960054A8CC /* cNoteParagraph.swift */,
-				D9E676C22C456B960054A8CC /* cItem.swift */,
-				D9E676C32C456B960054A8CC /* sNoteAccessRecord.swift */,
-				D9E676C42C456B960054A8CC /* sBackgroundForegroundColorSet.swift */,
-				D9E676C52C456B960054A8CC /* eNoteBlockPreset.swift */,
-				D9E676C62C456B960054A8CC /* cNote.swift */,
-				D9E676C72C456B960054A8CC /* cFolder.swift */,
-			);
-			path = NonVisible;
 			sourceTree = "<group>";
 		};
 		D9E676C82C456B960054A8CC /* Preview Content */ = {
@@ -213,6 +361,7 @@
 			children = (
 				D9E676B02C456B960054A8CC /* nano-challenge-3 */,
 				D9EF2B982C3FE428009B044A /* Products */,
+				D90D1EEF2C47B218004AA48F /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -296,28 +445,51 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D90D1F162C47B324004AA48F /* sFolderView.swift in Sources */,
 				D9E676E62C456B960054A8CC /* cNote.swift in Sources */,
+				D90D1EED2C47B1F5004AA48F /* cNote.swift in Sources */,
 				D9E676ED2C456B960054A8CC /* ChartView.swift in Sources */,
+				D90D1F0B2C47B324004AA48F /* sNoteBlockViewOld.swift in Sources */,
 				D9E676E22C456B960054A8CC /* cItem.swift in Sources */,
+				D90D1F0F2C47B324004AA48F /* sNoteBlockContent.swift in Sources */,
 				D9E676E52C456B960054A8CC /* eNoteBlockPreset.swift in Sources */,
+				D90D1F142C47B324004AA48F /* sNoteBlock.swift in Sources */,
+				D90D1EE92C47B1F5004AA48F /* sNoteBlockStyle.swift in Sources */,
+				D90D1EE82C47B1F5004AA48F /* sNoteAccessRecord.swift in Sources */,
+				D90D1EEC2C47B1F5004AA48F /* eNoteBlockPreset.swift in Sources */,
 				D9E676D82C456B960054A8CC /* sAppConfig.swift in Sources */,
 				D9E676E42C456B960054A8CC /* sBackgroundForegroundColorSet.swift in Sources */,
+				D90D1F122C47B324004AA48F /* sNoteView.swift in Sources */,
+				D90D1EEA2C47B1F5004AA48F /* cNoteParagraph.swift in Sources */,
 				D9E676D92C456B960054A8CC /* sUIConfig.swift in Sources */,
+				D90D1F132C47B324004AA48F /* cClock.swift in Sources */,
+				D90D1F0A2C47B324004AA48F /* sFolderCreationSheet.swift in Sources */,
 				D9E676F02C456B960054A8CC /* Utils.swift in Sources */,
+				D90D1EEB2C47B1F5004AA48F /* sBackgroundForegroundColorSet.swift in Sources */,
 				D9E676E92C456B960054A8CC /* xLogger.swift in Sources */,
+				D90D1F152C47B324004AA48F /* cCountdownTimer.swift in Sources */,
 				D9E676F22C456B960054A8CC /* nano_challenge_3App.swift in Sources */,
+				D90D1F0C2C47B324004AA48F /* sFolderSelection.swift in Sources */,
 				D9E676E12C456B960054A8CC /* cNoteParagraph.swift in Sources */,
+				D90D1F112C47B324004AA48F /* sCollectionOfNoteBlocks.swift in Sources */,
+				D90D1EF72C47B2D9004AA48F /* sReadingGoal.swift in Sources */,
 				D9E676E72C456B960054A8CC /* cFolder.swift in Sources */,
 				D9E676F12C456B960054A8CC /* ContentView.swift in Sources */,
+				D90D1EEE2C47B1F5004AA48F /* cFolder.swift in Sources */,
 				D9E676DE2C456B960054A8CC /* Data.swift in Sources */,
 				D9E676E32C456B960054A8CC /* sNoteAccessRecord.swift in Sources */,
+				D90D1F102C47B324004AA48F /* sNoteCreationView.swift in Sources */,
+				D90D1EF22C47B282004AA48F /* ViewModel.swift in Sources */,
 				D9E676E02C456B960054A8CC /* sNoteBlockStyle.swift in Sources */,
+				D90D1EF52C47B2AF004AA48F /* sUserDefaultsNaming.swift in Sources */,
 				D9E676EF2C456B960054A8CC /* OnboardingView.swift in Sources */,
 				D9E676EA2C456B960054A8CC /* xBundle.swift in Sources */,
 				D9E676EB2C456B960054A8CC /* xColor.swift in Sources */,
+				D90D1F0E2C47B324004AA48F /* sNoteViewOld.swift in Sources */,
 				D9E676DA2C456B960054A8CC /* fDebug.swift in Sources */,
 				D9E676EE2C456B960054A8CC /* OverviewChartView.swift in Sources */,
 				D9E676DD2C456B960054A8CC /* OnboardingViewModel.swift in Sources */,
+				D90D1F0D2C47B324004AA48F /* sNoteSelection.swift in Sources */,
 				D9E676EC2C456B960054A8CC /* OnboardingModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
