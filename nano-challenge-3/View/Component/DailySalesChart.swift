@@ -1,17 +1,17 @@
-////
-////  DailySalesChart.swift
-////  nano-challenge-3
-////
-////  Created by Clarissa Alverina on 15/07/24.
-////
 //
-//import SwiftUI
-//import Charts
+//  DailySalesChart.swift
+//  nano-challenge-3
 //
-//struct DailySalesChart: View {
+//  Created by Clarissa Alverina on 15/07/24.
+//
+
+import SwiftUI
+import Charts
+
+struct DailySalesChart: View {
 //    @Binding var scrollPosition: Date
-//
-//    var body: some View {
+
+    var body: some View {
 //        Chart {
 //            ForEach(SalesData.last365Days, id: \.day) { dayData in
 //                BarMark(
@@ -39,9 +39,20 @@
 //                AxisValueLabel(format: .dateTime.month().day())
 //            }
 //        }
-//        
-//    }
+        
+        TestChart()
+            .chartXVisibleDomain(length: 3600 * 24)
+            .chartXAxis {
+                AxisMarks(values: .stride(by: .day, count: 1)) {
+                    AxisTick()
+                    AxisGridLine()
+                    AxisValueLabel(format: .dateTime.month().day())
+                }
+            }
+            .padding()
+        
+    }
+}
+//#Preview {
+//    DailySalesChart(scrollPosition: $scrollPositionStartWeek)
 //}
-////#Preview {
-////    DailySalesChart(scrollPosition: $scrollPositionStartWeek)
-////}

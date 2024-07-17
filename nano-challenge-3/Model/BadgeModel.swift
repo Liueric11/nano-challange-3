@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct BadgeItem {
+    var name: String
+    var imageName: String
+    var opacity: Double
+}

@@ -12,7 +12,9 @@ struct BottomNavBar: View {
         HStack(alignment: .top) {
             Image(systemName: "folder.badge.plus")
             Spacer()
-            Image(systemName: "square.and.pencil")
+            NavigationLink(destination: NoteView()) {
+                Image(systemName: "square.and.pencil")
+            }
         }
         .padding(.horizontal, 16)
         .padding(.vertical, 0)

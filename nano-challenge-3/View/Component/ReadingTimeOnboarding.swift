@@ -32,7 +32,7 @@ struct ReadingTimeOnboarding: View {
             Rectangle()
                 .frame(width: 361, height: 133)
                 .cornerRadius(12)
-                .foregroundColor(.white)
+                .foregroundColor(Color(UIColor.secondarySystemGroupedBackground))
             
             VStack {
                 HStack(spacing: 4) {
@@ -44,9 +44,10 @@ struct ReadingTimeOnboarding: View {
                     
                     Spacer()
                     
-                    Button(action: {
-                        // Action for button
-                    }) {
+//                    Button(action: {
+//                        // Action for button
+//                    }) {
+                    NavigationLink(destination: ChartView()) {
                         Image(systemName: "chevron.right")
                             .font(
                                 Font.custom("SF Pro", size: 17)
@@ -55,6 +56,7 @@ struct ReadingTimeOnboarding: View {
                             .foregroundColor(.indigo)
                             .padding(.trailing, 27)
                     }
+//                    }
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading, 32)
@@ -67,7 +69,7 @@ struct ReadingTimeOnboarding: View {
                     Text("of \(viewModel.habit.totalHours) hours")
                     
                     OverviewChartView()
-                        .padding(.leading, 100)
+                        .padding(.leading, 120)
                     
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)

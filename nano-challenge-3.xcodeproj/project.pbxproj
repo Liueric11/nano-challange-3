@@ -7,7 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D983EFD22C458303002F253D /* ChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D983EFD12C458303002F253D /* ChartModel.swift */; };
+		BE42756C2C46B92F00CAD864 /* BadgeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE42756B2C46B92F00CAD864 /* BadgeViewModel.swift */; };
+		BE42756E2C46BF0300CAD864 /* BadgeCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE42756D2C46BF0300CAD864 /* BadgeCollectionView.swift */; };
+		BE4275702C46C77400CAD864 /* Badges.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE42756F2C46C77400CAD864 /* Badges.swift */; };
+		BE4275732C46CD8200CAD864 /* SharedBadgesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4275722C46CD8200CAD864 /* SharedBadgesView.swift */; };
+		BE4275752C47A95300CAD864 /* ReadingGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4275742C47A95300CAD864 /* ReadingGoalView.swift */; };
+		BEA6539F2C458B1E001AFE36 /* YourReadingGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA6539E2C458B1E001AFE36 /* YourReadingGoal.swift */; };
+		BEA653A12C458B54001AFE36 /* BadgesCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA653A02C458B54001AFE36 /* BadgesCollection.swift */; };
+		BEA653A32C459B2D001AFE36 /* TestChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA653A22C459B2D001AFE36 /* TestChart.swift */; };
+		BEA653A52C463AA5001AFE36 /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA653A42C463AA5001AFE36 /* NoteView.swift */; };
+		BEA653A72C463AC6001AFE36 /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA653A62C463AC6001AFE36 /* ShareView.swift */; };
+		BEA653A92C463B11001AFE36 /* SharedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA653A82C463B11001AFE36 /* SharedImageView.swift */; };
+		D983EFD22C458303002F253D /* BadgeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D983EFD12C458303002F253D /* BadgeModel.swift */; };
 		D983EFDB2C458337002F253D /* FolderList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D983EFD42C458337002F253D /* FolderList.swift */; };
 		D983EFDC2C458337002F253D /* BottomNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D983EFD52C458337002F253D /* BottomNavBar.swift */; };
 		D983EFDD2C458337002F253D /* OverviewChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D983EFD62C458337002F253D /* OverviewChartView.swift */; };
@@ -44,7 +55,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D983EFD12C458303002F253D /* ChartModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartModel.swift; sourceTree = "<group>"; };
+		BE42756B2C46B92F00CAD864 /* BadgeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeViewModel.swift; sourceTree = "<group>"; };
+		BE42756D2C46BF0300CAD864 /* BadgeCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeCollectionView.swift; sourceTree = "<group>"; };
+		BE42756F2C46C77400CAD864 /* Badges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badges.swift; sourceTree = "<group>"; };
+		BE4275722C46CD8200CAD864 /* SharedBadgesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedBadgesView.swift; sourceTree = "<group>"; };
+		BE4275742C47A95300CAD864 /* ReadingGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingGoalView.swift; sourceTree = "<group>"; };
+		BEA6539E2C458B1E001AFE36 /* YourReadingGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourReadingGoal.swift; sourceTree = "<group>"; };
+		BEA653A02C458B54001AFE36 /* BadgesCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgesCollection.swift; sourceTree = "<group>"; };
+		BEA653A22C459B2D001AFE36 /* TestChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestChart.swift; sourceTree = "<group>"; };
+		BEA653A42C463AA5001AFE36 /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
+		BEA653A62C463AC6001AFE36 /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
+		BEA653A82C463B11001AFE36 /* SharedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedImageView.swift; sourceTree = "<group>"; };
+		D983EFD12C458303002F253D /* BadgeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeModel.swift; sourceTree = "<group>"; };
 		D983EFD42C458337002F253D /* FolderList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderList.swift; sourceTree = "<group>"; };
 		D983EFD52C458337002F253D /* BottomNavBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomNavBar.swift; sourceTree = "<group>"; };
 		D983EFD62C458337002F253D /* OverviewChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverviewChartView.swift; sourceTree = "<group>"; };
@@ -95,6 +117,7 @@
 		D983EFD32C458337002F253D /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				BEA653A22C459B2D001AFE36 /* TestChart.swift */,
 				D983EFD42C458337002F253D /* FolderList.swift */,
 				D983EFD52C458337002F253D /* BottomNavBar.swift */,
 				D983EFD62C458337002F253D /* OverviewChartView.swift */,
@@ -102,6 +125,9 @@
 				D983EFD82C458337002F253D /* DailySalesChart.swift */,
 				D983EFD92C458337002F253D /* MonthlySalesChart.swift */,
 				D983EFDA2C458337002F253D /* WeeklySalesChart.swift */,
+				BEA6539E2C458B1E001AFE36 /* YourReadingGoal.swift */,
+				BEA653A02C458B54001AFE36 /* BadgesCollection.swift */,
+				BE42756F2C46C77400CAD864 /* Badges.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -111,14 +137,13 @@
 			children = (
 				D9E676B12C456B960054A8CC /* Globals */,
 				D9E676BA2C456B960054A8CC /* ViewModel */,
-				D9E676BC2C456B960054A8CC /* Data.swift */,
 				D9E676BD2C456B960054A8CC /* Assets.xcassets */,
 				D9E676BE2C456B960054A8CC /* Models */,
 				D9E676C82C456B960054A8CC /* Preview Content */,
 				D9E676CA2C456B960054A8CC /* Extensions */,
 				D9E676CE2C456B960054A8CC /* Model */,
 				D9E676D02C456B960054A8CC /* View */,
-				D9E676D42C456B960054A8CC /* New Group */,
+				D9E676BC2C456B960054A8CC /* Data.swift */,
 				D9E676D52C456B960054A8CC /* Utils.swift */,
 				D9E676D62C456B960054A8CC /* ContentView.swift */,
 				D9E676D72C456B960054A8CC /* nano_challenge_3App.swift */,
@@ -166,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				D9E676BB2C456B960054A8CC /* OnboardingViewModel.swift */,
+				BE42756B2C46B92F00CAD864 /* BadgeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -215,7 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				D9E676CF2C456B960054A8CC /* OnboardingModel.swift */,
-				D983EFD12C458303002F253D /* ChartModel.swift */,
+				D983EFD12C458303002F253D /* BadgeModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -223,18 +249,17 @@
 		D9E676D02C456B960054A8CC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D9E676D12C456B960054A8CC /* ChartView.swift */,
 				D983EFD32C458337002F253D /* Component */,
 				D9E676D32C456B960054A8CC /* OnboardingView.swift */,
+				D9E676D12C456B960054A8CC /* ChartView.swift */,
+				BEA653A42C463AA5001AFE36 /* NoteView.swift */,
+				BEA653A62C463AC6001AFE36 /* ShareView.swift */,
+				BEA653A82C463B11001AFE36 /* SharedImageView.swift */,
+				BE42756D2C46BF0300CAD864 /* BadgeCollectionView.swift */,
+				BE4275722C46CD8200CAD864 /* SharedBadgesView.swift */,
+				BE4275742C47A95300CAD864 /* ReadingGoalView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		D9E676D42C456B960054A8CC /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		D9EF2B8E2C3FE428009B044A = {
@@ -328,31 +353,41 @@
 				D983EFDC2C458337002F253D /* BottomNavBar.swift in Sources */,
 				D9E676E62C456B960054A8CC /* cNote.swift in Sources */,
 				D9E676ED2C456B960054A8CC /* ChartView.swift in Sources */,
+				BEA653A12C458B54001AFE36 /* BadgesCollection.swift in Sources */,
 				D9E676E22C456B960054A8CC /* cItem.swift in Sources */,
+				BEA653A92C463B11001AFE36 /* SharedImageView.swift in Sources */,
 				D9E676E52C456B960054A8CC /* eNoteBlockPreset.swift in Sources */,
 				D9E676D82C456B960054A8CC /* sAppConfig.swift in Sources */,
 				D9E676E42C456B960054A8CC /* sBackgroundForegroundColorSet.swift in Sources */,
+				BE4275732C46CD8200CAD864 /* SharedBadgesView.swift in Sources */,
 				D9E676D92C456B960054A8CC /* sUIConfig.swift in Sources */,
+				BE42756E2C46BF0300CAD864 /* BadgeCollectionView.swift in Sources */,
 				D9E676F02C456B960054A8CC /* Utils.swift in Sources */,
+				BEA653A72C463AC6001AFE36 /* ShareView.swift in Sources */,
 				D9E676E92C456B960054A8CC /* xLogger.swift in Sources */,
 				D9E676F22C456B960054A8CC /* nano_challenge_3App.swift in Sources */,
+				BEA653A52C463AA5001AFE36 /* NoteView.swift in Sources */,
 				D9E676E12C456B960054A8CC /* cNoteParagraph.swift in Sources */,
+				BEA6539F2C458B1E001AFE36 /* YourReadingGoal.swift in Sources */,
 				D983EFDD2C458337002F253D /* OverviewChartView.swift in Sources */,
 				D9E676E72C456B960054A8CC /* cFolder.swift in Sources */,
+				BE42756C2C46B92F00CAD864 /* BadgeViewModel.swift in Sources */,
 				D9E676F12C456B960054A8CC /* ContentView.swift in Sources */,
 				D983EFDF2C458337002F253D /* DailySalesChart.swift in Sources */,
+				BEA653A32C459B2D001AFE36 /* TestChart.swift in Sources */,
 				D9E676DE2C456B960054A8CC /* Data.swift in Sources */,
+				BE4275752C47A95300CAD864 /* ReadingGoalView.swift in Sources */,
 				D983EFE02C458337002F253D /* MonthlySalesChart.swift in Sources */,
 				D9E676E32C456B960054A8CC /* sNoteAccessRecord.swift in Sources */,
+				BE4275702C46C77400CAD864 /* Badges.swift in Sources */,
 				D9E676E02C456B960054A8CC /* sNoteBlockStyle.swift in Sources */,
 				D9E676EF2C456B960054A8CC /* OnboardingView.swift in Sources */,
 				D9E676EA2C456B960054A8CC /* xBundle.swift in Sources */,
 				D983EFE12C458337002F253D /* WeeklySalesChart.swift in Sources */,
 				D9E676EB2C456B960054A8CC /* xColor.swift in Sources */,
 				D9E676DA2C456B960054A8CC /* fDebug.swift in Sources */,
-				D9E676EE2C456B960054A8CC /* OverviewChartView.swift in Sources */,
 				D9E676DD2C456B960054A8CC /* OnboardingViewModel.swift in Sources */,
-				D983EFD22C458303002F253D /* ChartModel.swift in Sources */,
+				D983EFD22C458303002F253D /* BadgeModel.swift in Sources */,
 				D983EFDB2C458337002F253D /* FolderList.swift in Sources */,
 				D983EFDE2C458337002F253D /* ReadingTimeOnboarding.swift in Sources */,
 				D9E676EC2C456B960054A8CC /* OnboardingModel.swift in Sources */,
@@ -489,7 +524,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"nano-challenge-3/Preview Content\"";
-				DEVELOPMENT_TEAM = 8DJ64TD7VC;
+				DEVELOPMENT_TEAM = 7Z75T55G26;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -502,7 +537,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.apple.nano-challenge-3";
+				PRODUCT_BUNDLE_IDENTIFIER = "nano-challenge-3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -518,7 +553,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"nano-challenge-3/Preview Content\"";
-				DEVELOPMENT_TEAM = 8DJ64TD7VC;
+				DEVELOPMENT_TEAM = 7Z75T55G26;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -531,7 +566,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.apple.nano-challenge-3";
+				PRODUCT_BUNDLE_IDENTIFIER = "nano-challenge-3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

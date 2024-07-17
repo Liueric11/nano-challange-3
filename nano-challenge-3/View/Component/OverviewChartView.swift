@@ -32,7 +32,6 @@ func generateDummySalesData() -> [ReadingData] {
 }
 
 
-
 struct OverviewChartView: View {
     let data = generateDummySalesData()
     var body: some View {

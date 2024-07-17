@@ -1,10 +1,202 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "Add paragraph" : {
+    "%lld" : {
 
     },
-    "Change block style" : {
+    "%lld sold" : {
+
+    },
+    "8" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "8"
+          }
+        }
+      }
+    },
+    "20.00" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "20.00"
+          }
+        }
+      }
+    },
+    "22 days streak" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "22 hari berturut-turut"
+          }
+        }
+      }
+    },
+    "25 of 44 days streak" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "25 dari 44 hari berturut-turut"
+          }
+        }
+      }
+    },
+    "25 of 66 days streak" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "25 dari 66 hari berturut-turut"
+          }
+        }
+      }
+    },
+    "123" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "123"
+          }
+        }
+      }
+    },
+    "Add New Record" : {
+
+    },
+    "Average" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rata-rata"
+          }
+        }
+      }
+    },
+    "Badge" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Penghargaan"
+          }
+        }
+      }
+    },
+    "Badges Collection" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koleksi Penghargaan"
+          }
+        }
+      }
+    },
+    "Collect your badge then reading became your habit." : {
+
+    },
+    "D" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "D"
+          }
+        }
+      }
+    },
+    "Date" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tanggal"
+          }
+        }
+      }
+    },
+    "Day" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hari"
+          }
+        }
+      }
+    },
+    "Dismiss" : {
+
+    },
+    "Edit" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edit"
+          }
+        }
+      }
+    },
+    "Folders" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Folders"
+          }
+        }
+      }
+    },
+    "Goals" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Goals"
+          }
+        }
+      }
+    },
+    "Habit Report" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Laporan Habit"
+          }
+        }
+      }
+    },
+    "hours per day" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "jam per hari"
+          }
+        }
+      }
+    },
+    "iCloud" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iCloud"
+          }
+        }
+      }
+    },
+    "ini view yang dishare" : {
 
     },
     "ls.button.redirect-to-habit-view" : {
@@ -66,6 +258,12 @@
             "state" : "translated",
             "value" : "Add"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tambah"
+          }
         }
       }
     },
@@ -77,6 +275,12 @@
             "state" : "translated",
             "value" : "Cancel"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batalkan"
+          }
         }
       }
     },
@@ -87,6 +291,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Done"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selesai"
           }
         }
       }
@@ -166,6 +376,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "New Folder"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Folder Baru"
           }
         }
       }
@@ -272,8 +488,120 @@
         }
       }
     },
-    "Save" : {
+    "M" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "M"
+          }
+        }
+      }
+    },
+    "Minute" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menit"
+          }
+        }
+      }
+    },
+    "Minutes" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menit"
+          }
+        }
+      }
+    },
+    "modal view" : {
 
+    },
+    "Next Reading" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bacaan Selanjutnya"
+          }
+        }
+      }
+    },
+    "of %lld hours" : {
+
+    },
+    "Reading Habit" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Habit Membaca"
+          }
+        }
+      }
+    },
+    "Show Modal" : {
+
+    },
+    "Show Transactions" : {
+
+    },
+    "Style" : {
+
+    },
+    "Tonight" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Malam ini"
+          }
+        }
+      }
+    },
+    "Total" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Total"
+          }
+        }
+      }
+    },
+    "Transactions" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transaksi"
+          }
+        }
+      }
+    },
+    "W" : {
+
+    },
+    "Year Month Day" : {
+
+    },
+    "You’ve earned this badge 7 times for doubling your 22 day strike reading goal." : {
+
+    },
+    "Your Reading Goal" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Goal Membaca Kamu"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"

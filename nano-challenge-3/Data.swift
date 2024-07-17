@@ -12,7 +12,6 @@ import Foundation
 
 private let gaussianRandoms = GKGaussianDistribution(lowestValue: 0, highestValue: 20)
 
-
 class ModelData: ObservableObject, Identifiable {
     var id: UUID = UUID()
     var day: Date

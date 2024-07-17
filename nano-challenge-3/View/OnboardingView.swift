@@ -20,7 +20,8 @@ struct OnboardingView: View {
                 
                 BottomNavBar()
             }
-            .background(Color(.secondarySystemBackground))
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(.onboarding)
             .navigationTitle("Folders")
             .searchable(text: $viewModel.habitList)
         }
