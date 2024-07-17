@@ -10,6 +10,7 @@ import SwiftUI
 struct ReadingTimeOnboarding: View {
     
     @ObservedObject var viewModel = HabitViewModel()
+    @State private var isModalPresented = false
     
     var body: some View {
         VStack(spacing: 3) {

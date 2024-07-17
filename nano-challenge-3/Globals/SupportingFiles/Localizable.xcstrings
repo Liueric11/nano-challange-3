@@ -23,12 +23,42 @@
         }
       }
     },
+    "9" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "9"
+          }
+        }
+      }
+    },
+    "10" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10"
+          }
+        }
+      }
+    },
     "20.00" : {
       "localizations" : {
         "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "20.00"
+          }
+        }
+      }
+    },
+    "22" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "22"
           }
         }
       }
@@ -63,6 +93,16 @@
         }
       }
     },
+    "26" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "26"
+          }
+        }
+      }
+    },
     "123" : {
       "localizations" : {
         "id" : {
@@ -77,7 +117,24 @@
 
     },
     "Alarm" : {
-
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alarm"
+          }
+        }
+      }
+    },
+    "All iCloud" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semua iCloud"
+          }
+        }
+      }
     },
     "Average" : {
       "localizations" : {
@@ -109,11 +166,24 @@
         }
       }
     },
+    "Centered Title" : {
+
+    },
     "Change block style" : {
 
     },
     "Collect your badge then reading became your habit." : {
 
+    },
+    "Congratulations!" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selamat!"
+          }
+        }
+      }
     },
     "D" : {
       "localizations" : {
@@ -147,6 +217,16 @@
     },
     "Dismiss" : {
 
+    },
+    "Duration" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Durasi"
+          }
+        }
+      }
     },
     "Edit" : {
       "localizations" : {
@@ -208,7 +288,7 @@
         }
       }
     },
-    "ini view yang dishare" : {
+    "Jika diumpamakan sekeping koin tidak bisa menjadikan kaya, suatu perubahan positif seperti meditasi selama satu menit. When you fall in love with the process rather than the product, you don’t have to wait to give yourself permission to be happy. You can be satisfied anytime your system is running. And a system can be successful in many different forms, not just the one you first envision. Pada umumnya, perubahan-perubahan kecil seringkali terkesan tak bermakna karena tidak langsung membawa perubahan nyata pada hidup suatu manusia." : {
 
     },
     "ls.button.add-note-paragraph" : {
@@ -544,6 +624,16 @@
         }
       }
     },
+    "mins reading" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "menit membaca"
+          }
+        }
+      }
+    },
     "Minute" : {
       "localizations" : {
         "id" : {
@@ -580,10 +670,30 @@
         }
       }
     },
+    "Notes" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notes"
+          }
+        }
+      }
+    },
     "of %lld hours" : {
 
     },
     "per day" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "per hari"
+          }
+        }
+      }
+    },
+    "Quote Selected Text" : {
 
     },
     "Read every day, set your goals, and embrace your reading journey " : {
@@ -601,28 +711,87 @@
       }
     },
     "Reading time" : {
-
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Waktu Membaca"
+          }
+        }
+      }
     },
     "Reading Time" : {
-
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Waktu Membaca"
+          }
+        }
+      }
+    },
+    "Recently Deleted" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Baru Dihapus"
+          }
+        }
+      }
     },
     "Reading Type" : {
 
     },
     "Reminder" : {
-
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pengingat"
+          }
+        }
+      }
     },
     "Repeat" : {
-
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Berulang"
+          }
+        }
+      }
     },
     "Save" : {
-
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Simpan"
+          }
+        }
+      }
     },
     "Select a time" : {
-
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pilih Waktu"
+          }
+        }
+      }
     },
     "Set Your Reading Goal" : {
-
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tentukan Reading Goal"
+          }
+        }
+      }
     },
     "Show Transactions" : {
 
@@ -631,7 +800,14 @@
 
     },
     "Time" : {
-
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Waktu"
+          }
+        }
+      }
     },
     "Tonight" : {
       "localizations" : {
@@ -667,7 +843,14 @@
 
     },
     "W" : {
-
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "W"
+          }
+        }
+      }
     },
     "Year Month Day" : {
 

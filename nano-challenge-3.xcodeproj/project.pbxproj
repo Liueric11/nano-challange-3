@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BEFD52D02C47DACB00E5D1F0 /* RedesignNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFD52CF2C47DACB00E5D1F0 /* RedesignNoteView.swift */; };
+		BEFD52D22C481B6100E5D1F0 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFD52D12C481B6100E5D1F0 /* QuoteView.swift */; };
 		D90D1EF22C47B282004AA48F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D1EF12C47B282004AA48F /* ViewModel.swift */; };
 		D90D1EF52C47B2AF004AA48F /* sUserDefaultsNaming.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D1EF42C47B2AF004AA48F /* sUserDefaultsNaming.swift */; };
 		D90D1EF72C47B2D9004AA48F /* sReadingGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D1EF62C47B2D9004AA48F /* sReadingGoal.swift */; };
@@ -75,6 +76,7 @@
 
 /* Begin PBXFileReference section */
 		BEFD52CF2C47DACB00E5D1F0 /* RedesignNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedesignNoteView.swift; sourceTree = "<group>"; };
+		BEFD52D12C481B6100E5D1F0 /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
 		D90D1EF12C47B282004AA48F /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		D90D1EF42C47B2AF004AA48F /* sUserDefaultsNaming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sUserDefaultsNaming.swift; sourceTree = "<group>"; };
 		D90D1EF62C47B2D9004AA48F /* sReadingGoal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sReadingGoal.swift; sourceTree = "<group>"; };
@@ -387,6 +389,7 @@
 				D90D1F472C47B97A004AA48F /* BadgeCollectionView.swift */,
 				BEFD52CF2C47DACB00E5D1F0 /* RedesignNoteView.swift */,
 				D9AEA6F12C4825720077A303 /* FilesView.swift */,
+				BEFD52D12C481B6100E5D1F0 /* QuoteView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -508,6 +511,7 @@
 				D9E676F22C456B960054A8CC /* nano_challenge_3App.swift in Sources */,
 				D90D1F4E2C47B97A004AA48F /* ReadingGoalView.swift in Sources */,
 				D90D1F0C2C47B324004AA48F /* sFolderSelection.swift in Sources */,
+				BEFD52D22C481B6100E5D1F0 /* QuoteView.swift in Sources */,
 				D90D1F612C47BEF4004AA48F /* sNoteAccessRecord.swift in Sources */,
 				D9AEA6F42C483D0E0077A303 /* UITextViewRepresentable.swift in Sources */,
 				D90D1F112C47B324004AA48F /* sCollectionOfNoteBlocks.swift in Sources */,

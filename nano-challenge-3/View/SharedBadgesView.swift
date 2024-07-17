@@ -30,7 +30,7 @@ struct ShareBadges: View {
                     sheet.toggle()
                     
                 }) {
-                    Image(systemName: "square.and.arrow.up.fill")
+                    Image(systemName: "square.and.arrow.up")
                         .font(.system(size: 24))
                         .padding(.bottom, 650)
                         .padding(.leading, 320)
