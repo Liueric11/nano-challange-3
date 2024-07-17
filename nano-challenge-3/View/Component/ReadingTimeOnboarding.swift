@@ -28,53 +28,49 @@ struct ReadingTimeOnboarding: View {
         }
         .padding(.bottom, 17)
         
-        ZStack {
-            Rectangle()
-                .frame(width: 361, height: 133)
-                .cornerRadius(12)
-                .foregroundColor(Color(UIColor.secondarySystemGroupedBackground))
-            
-            VStack {
-                HStack(spacing: 4) {
-                    Image(systemName: "timer")
-                        .foregroundColor(.indigo)
-                        .font(.system(size: 13))
-                    Text(viewModel.habit.readingTime)
-                        .font(.system(size: 13))
-                    
-                    Spacer()
-                    
-//                    Button(action: {
-//                        // Action for button
-//                    }) {
-                    NavigationLink(destination: ChartView()) {
-                        Image(systemName: "chevron.right")
-                            .font(
-                                Font.custom("SF Pro", size: 17)
-                                    .weight(.semibold)
-                            )
-                            .foregroundColor(.indigo)
-                            .padding(.trailing, 27)
-                    }
-//                    }
-                }
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.leading, 32)
+        NavigationLink(destination: FilesView()) {
+            ZStack {
+                Rectangle()
+                    .frame(width: 361, height: 133)
+                    .cornerRadius(12)
+                    .foregroundColor(Color(UIColor.secondarySystemGroupedBackground))
                 
-                HStack(alignment: .firstTextBaseline) {
-                    Text("\(viewModel.habit.completedHours)")
-                        .font(.system(size: 22))
-                        .fontWeight(.bold)
+                VStack {
+                    HStack(spacing: 4) {
+                        Image(systemName: "timer")
+                            .foregroundColor(.indigo)
+                            .font(.system(size: 13))
+                        Text(viewModel.habit.readingTime)
+                            .font(.system(size: 13))
+                        
+                        Spacer()
+                        
+                            Image(systemName: "chevron.right")
+                                .font(
+                                    Font.custom("SF Pro", size: 17)
+                                        .weight(.semibold)
+                                )
+                                .foregroundColor(.indigo)
+                                .padding(.trailing, 27)
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.leading, 32)
                     
-                    Text("of \(viewModel.habit.totalHours) hours")
-                    
-                    OverviewChartView()
-                        .padding(.leading, 120)
-                    
+                    HStack(alignment: .firstTextBaseline) {
+                        Text("\(viewModel.habit.completedHours)")
+                            .font(.system(size: 22))
+                            .fontWeight(.bold)
+                        
+                        Text("of \(viewModel.habit.totalHours) hours")
+                        
+                        OverviewChartView()
+                            .padding(.leading, 120)
+                        
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.leading, 32)
+                    .padding(.top, 30)
                 }
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.leading, 32)
-                .padding(.top, 30)
             }
         }
         .padding(.bottom, 17)
