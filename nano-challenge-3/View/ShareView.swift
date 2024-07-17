@@ -8,15 +8,19 @@
 import SwiftUI
 
 struct ShareView: View {
-    @Binding var isPresented: Bool
+    let secondsElapsed: Int
+    let title: String
+    let text: String
     
     @State var sheet = false
-
+    
+    @State private var isSheetPresented = false
+    
     var body: some View {
         var items : [Any] = []
-        
         VStack {
-            SharedImageView()
+            SharedImageView(secondsElapsed: secondsElapsed, title: title, text: text)
+                .padding()
         }
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -32,7 +36,7 @@ struct ShareView: View {
                     Spacer()
                     
                     Button(action: {
-                        guard let imageShared = ImageRenderer(content: SharedImageView()).uiImage else {
+                        guard let imageShared = ImageRenderer(content: SharedImageView(secondsElapsed: secondsElapsed, title: title, text: text)).uiImage else {
                             return
                         }
                         
@@ -57,7 +61,13 @@ struct ShareView: View {
                     
                 }
             }
+
         }
+        .navigationBarTitle("Preview")
+    }
+    
+    func shareContent() {
+        isSheetPresented.toggle()
     }
 }
 
@@ -73,3 +83,8 @@ struct ShareSheet : UIViewControllerRepresentable {
     }
 }
 
+struct ShareView_Previews: PreviewProvider {
+    static var previews: some View {
+        ShareView(secondsElapsed: 120, title: "Sample Title", text: "This is a sample text.")
+    }
+}

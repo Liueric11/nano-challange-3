@@ -24,6 +24,7 @@ struct OnboardingView: View {
             .background(.onboarding)
             .navigationTitle("Folders")
             .searchable(text: $viewModel.habitList)
+            .navigationBarBackButtonHidden()
         }
     }
 }
