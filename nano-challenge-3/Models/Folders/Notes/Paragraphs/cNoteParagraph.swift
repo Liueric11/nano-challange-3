@@ -1,5 +1,6 @@
-import SwiftData
 import Foundation
+import Observation
+import SwiftData
 
 @Observable class NoteParagraph : Identifiable, Codable, Hashable {
     var id      = UUID()

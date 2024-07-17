@@ -24,7 +24,7 @@ enum NoteBlockPreset : String, Codable, CaseIterable {
     var textStyle  : Font {
         switch ( self ) {
             case .title:
-                return .headline
+                return .title3.bold()
             case .subtitle:
                 return .subheadline
             case .card:
