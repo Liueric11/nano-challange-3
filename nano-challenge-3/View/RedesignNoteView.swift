@@ -17,6 +17,14 @@ struct RedesignNoteView: View {
     @State private var text: String = ""
     @State private var selectedOption: FileType? = nil
     @State private var navigateToAnotherPage = false
+    private var fileModel: FileModel?
+    
+    init(title: String = "", text: String = "", selectedOption: FileType? = nil, fileModel: FileModel? = nil) {
+        _title = State(initialValue: title)
+        _text = State(initialValue: text)
+        _selectedOption = State(initialValue: selectedOption)
+        self.fileModel = fileModel
+    }
     
     func startTimer() {
         isTimerRunning = true
@@ -96,7 +104,7 @@ struct RedesignNoteView: View {
         }
         .background(
             NavigationLink(
-                destination: ReadingGoalView(),
+                destination: ReadingGoalView(isGoalModalPresented: .constant(true)),
                 isActive: $navigateToAnotherPage,
                 label: {
                     EmptyView()
@@ -106,9 +114,15 @@ struct RedesignNoteView: View {
     }
     
     func submit() {
-        let newFile = FileModel(title: title, type: selectedOption ?? FileType.book, content: text)
+        if let fileModel = fileModel {
+            fileModel.content = text
+            fileModel.title = title
+            fileModel.type = selectedOption ?? FileType.book
+        } else{
+            let newFile = FileModel(title: title, type: selectedOption ?? FileType.book, content: text)
+            modelContext.insert(newFile)
+        }
         let newRecord = RecordModel(minutes: secondsElapsed)
-        modelContext.insert(newFile)
         modelContext.insert(newRecord)
         navigateToAnotherPage = true
     }

@@ -23,7 +23,7 @@ final class FileModel: Identifiable {
     var id: UUID
     var title: String
     private var typeRawValue: String
-    let content: String
+    var content: String
     
     // Computed property to convert stored string to enum
     var type: FileType {

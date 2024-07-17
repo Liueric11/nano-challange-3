@@ -15,7 +15,7 @@ struct FilesView: View {
     var body: some View {
             List {
                 ForEach(files) { file in
-                    NavigationLink(destination: ReadingGoalView()) {
+                    NavigationLink(destination: RedesignNoteView(title: file.title, text: file.content, selectedOption: file.type, fileModel: file)) {
                         HStack {
                             Image(systemName: "book")
                                 .foregroundColor(.indigo)
@@ -37,10 +37,15 @@ struct FilesView: View {
                         Spacer()
                         NavigationLink(destination: RedesignNoteView()) {
                             Image(systemName: "square.and.pencil")
-                                .resizable()
-                                .frame(width: 28, height: 28)
                                 .foregroundColor(.indigo)
                         }
+                    }
+                }
+                
+                ToolbarItemGroup(placement: .topBarTrailing) {
+                    NavigationLink(destination: ChartView()) {
+                        Image(systemName: "chart.bar")
+                            .foregroundColor(.indigo)
                     }
                 }
             }

@@ -166,9 +166,6 @@
         }
       }
     },
-    "Centered Title" : {
-
-    },
     "Change block style" : {
 
     },
@@ -215,10 +212,11 @@
         }
       }
     },
-    "Dismiss" : {
+    "Done" : {
 
     },
     "Duration" : {
+      "extractionState" : "stale",
       "localizations" : {
         "id" : {
           "stringUnit" : {
@@ -654,9 +652,6 @@
         }
       }
     },
-    "modal view" : {
-
-    },
     "Never" : {
 
     },
@@ -693,7 +688,7 @@
         }
       }
     },
-    "Quote Selected Text" : {
+    "Preview" : {
 
     },
     "Read every day, set your goals, and embrace your reading journey " : {
@@ -730,6 +725,9 @@
         }
       }
     },
+    "Reading Type" : {
+
+    },
     "Recently Deleted" : {
       "localizations" : {
         "id" : {
@@ -739,9 +737,6 @@
           }
         }
       }
-    },
-    "Reading Type" : {
-
     },
     "Reminder" : {
       "localizations" : {
