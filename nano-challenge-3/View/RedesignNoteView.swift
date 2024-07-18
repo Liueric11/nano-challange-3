@@ -16,7 +16,6 @@ struct RedesignNoteView: View {
     @State private var title: String = ""
     @State private var text: String = ""
     @State private var selectedOption: FileType? = nil
-    @State private var navigateToAnotherPage = false
     private var fileModel: FileModel?
     
     init(title: String = "", text: String = "", selectedOption: FileType? = nil, fileModel: FileModel? = nil) {
@@ -105,8 +104,8 @@ struct RedesignNoteView: View {
         }
         .background(
             NavigationLink(
-                destination: ReadingGoalView(isGoalModalPresented: .constant(true)),
-                isActive: $navigateToAnotherPage,
+                destination: ShareView(secondsElapsed: secondsElapsed, title: title, text: text),
+                isActive: $navigateToShareView,
                 label: {
                     EmptyView()
                 })
@@ -123,12 +122,9 @@ struct RedesignNoteView: View {
             let newFile = FileModel(title: title, type: selectedOption ?? FileType.book, content: text)
             modelContext.insert(newFile)
         }
-        let newRecord = RecordModel(minutes: secondsElapsed)
+        let newRecord = RecordModel(seconds: secondsElapsed)
         modelContext.insert(newRecord)
         stopTimer()
-        title = ""
-        text = ""
-        selectedOption = nil
         navigateToShareView = true
     }
 }

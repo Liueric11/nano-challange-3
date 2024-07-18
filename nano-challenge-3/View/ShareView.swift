@@ -12,12 +12,10 @@ struct ShareView: View {
     let title: String
     let text: String
     
-    @State var sheet = false
-    
-    @State private var isSheetPresented = false
+    @State private var sheet = false
+    @State private var items: [Any] = []
     
     var body: some View {
-        var items : [Any] = []
         VStack {
             SharedImageView(secondsElapsed: secondsElapsed, title: title, text: text)
                 .padding()
@@ -42,7 +40,6 @@ struct ShareView: View {
                         
                         items.removeAll()
                         items.append(imageShared)
-                
                         sheet.toggle()
                     }) {
                         Image(systemName: "square.and.arrow.up")
@@ -50,36 +47,30 @@ struct ShareView: View {
                             .padding(.bottom, 3)
                             .foregroundColor(.indigo)
                     }
-                    .sheet(isPresented: $sheet, content: {
+                    .sheet(isPresented: $sheet) {
                         ShareSheet(items: items)
-                    })
+                    }
                     
                     NavigationLink(destination: OnboardingView()) {
                         Text("Done")
                             .foregroundColor(.indigo)
                     }
-                    
                 }
             }
-
         }
         .navigationBarTitle("Preview")
     }
-    
-    func shareContent() {
-        isSheetPresented.toggle()
-    }
 }
 
-struct ShareSheet : UIViewControllerRepresentable {
-    var items : [Any]
-    func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {
-        
-    }
+struct ShareSheet: UIViewControllerRepresentable {
+    var items: [Any]
     
     func makeUIViewController(context: Context) -> UIActivityViewController {
-        let controller = UIActivityViewController(activityItems: items, applicationActivities: nil)
-        return controller
+        return UIActivityViewController(activityItems: items, applicationActivities: nil)
+    }
+    
+    func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {
+        // No updates needed
     }
 }
 

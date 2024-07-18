@@ -10,8 +10,49 @@
     "%lld" : {
 
     },
+    "%lld minutes" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld minute"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "new",
+                  "value" : "%lld minutes"
+                }
+              }
+            }
+          }
+        },
+        "id" : {
+          "variations" : {
+            "plural" : {
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "menit"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "%lld sold" : {
-
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "terjual"
+          }
+        }
+      }
     },
     "8" : {
       "localizations" : {
@@ -114,10 +155,8 @@
         }
       }
     },
-    "Add New Record" : {
-
-    },
     "Alarm" : {
+      "extractionState" : "stale",
       "localizations" : {
         "id" : {
           "stringUnit" : {
@@ -214,7 +253,14 @@
       }
     },
     "Done" : {
-
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Done"
+          }
+        }
+      }
     },
     "Duration" : {
       "extractionState" : "stale",
@@ -695,7 +741,10 @@
     "Quote Selected Text" : {
 
     },
-    "Read every day, set your goals, and embrace your reading journey " : {
+    "Read every day, set your goals, and embrace your reading journey" : {
+
+    },
+    "Reading Goal" : {
 
     },
     "Reading Habit" : {
@@ -771,6 +820,9 @@
           }
         }
       }
+    },
+    "Seconds" : {
+
     },
     "Select a time" : {
       "localizations" : {
