@@ -29,7 +29,7 @@ struct YourReadingGoal: View {
                         Label {
                             Text("Goals")
                         } icon: {
-                            Image(systemName: "flag.checkered") // Replace with your image name
+                            Image(systemName: "flag.checkered")
                         }
                     }
                 }
