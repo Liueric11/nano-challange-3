@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Charts
 
 struct OnboardingView: View {
     @ObservedObject var viewModel = HabitViewModel()

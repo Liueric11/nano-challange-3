@@ -21,96 +21,78 @@ struct YourReadingGoal: View {
                 .font(.title3)
                 .fontWeight(.semibold)
                 .frame(maxWidth: .infinity, alignment: .topLeading)
-                .padding(16)
+                .padding(.horizontal, 16)
             
             VStack{
-                VStack{
-                    HStack{
+                HStack{
+                    VStack(alignment: .leading, spacing: 16){
                         Label {
                             Text("Goals")
+                                .font(.subheadline)
+                                .fontWeight(.semibold)
+                                .foregroundColor(.indigo)
                         } icon: {
-                            Image(systemName: "flag.checkered") // Replace with your image name
+                            Image(systemName: "flag.checkered")
+                                .foregroundColor(.indigo)
                         }
-                    }
-                }
-            }
-            .background(Color(UIColor.secondarySystemGroupedBackground))
-            
-            ZStack {
-                Rectangle()
-                  .frame(width: 361, height: 161)
-                  .foregroundColor(Color(UIColor.secondarySystemGroupedBackground))
-                  .cornerRadius(10)
-                
-                VStack {
-                    HStack(alignment: .firstTextBaseline){
-                        VStack(alignment: .leading) {
-                            HStack{
-                                Image(systemName: "flag.checkered")
-                                    .font(.system(size: 15))
-                                Text("Goals")
-                                    .font(.system(size: 15))
-                                    .foregroundColor(Color(UIColor.secondaryLabel))
-                            }
-                            .padding(.bottom, 10)
-                            
-                            HStack{
-                                Text("\(selectedHour)")
-                                    .font(.system(size: 20))
-                                    .bold()
-                            }
+                        
+                        VStack(alignment: .leading, spacing: 4){
+                            Text("\(selectedHour)")
+                                .font(.title3)
+                                .fontWeight(.semibold)
                             
                             Text("hours per day")
-                                .font(.system(size: 15))
-                                .bold()
-                        }
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        
-                        if isReminder {
-                            VStack(alignment: .leading){
-                                HStack{
-                                    Image(systemName: "book")
-                                        .font(.system(size: 15))
-                                    Text("Next Reading")
-                                        .font(.system(size: 15))
-                                        .foregroundColor(Color(UIColor.secondaryLabel))
-                                }
-                                .padding(.bottom, 10)
-                                
-                                Text("\(formattedTime(from: selectedTimeRepeat))")
-                                    .bold()
-                                    .font(.system(size: 20))
-                                
-                                Text("\(selectedRepeat?.rawValue ?? "Everday")")
-                                    .font(.system(size: 15))
-                                    .foregroundColor(Color(UIColor.secondaryLabel))
-                                    
-                            }
-                            .frame(maxWidth: .infinity, alignment: .leading)
+                                .font(.subheadline)
+                                .fontWeight(.regular)
+                                .foregroundColor(.secondary)
                         }
                     }
-                    .padding(.leading, 20)
                     
-                    Rectangle()
-                        .foregroundColor(.clear)
-                        .frame(width: 329, height: 1)
-                        .background(Color(UIColor.secondaryLabel))
-                        .padding(.top, 10)
-                
-                    Button(action: {
-                        isGoalModalPresented.toggle()
-                    }, label: {
-                        Text("Edit")
-                            .font(.system(size: 15))
-                            .frame(maxWidth: .infinity, alignment: .topLeading)
-                            .padding(.leading, 18)
-                            .padding(.top, 5)
-                    })
-                
+                    Spacer()
+                    
+                    VStack(alignment: .leading, spacing: 16){
+                        Label {
+                            Text("Next Reading")
+                                .font(.subheadline)
+                                .fontWeight(.semibold)
+                                .foregroundColor(.indigo)
+                        } icon: {
+                            Image(systemName: "book")
+                                .foregroundColor(.indigo)
+                        }
+                        
+                        VStack(alignment: .leading, spacing: 4){
+                            Text("\(formattedTime(from: selectedTimeRepeat))")
+                                .font(.title3)
+                                .fontWeight(.semibold)
+                            
+                            Text("\(selectedRepeat?.rawValue ?? "Everday")")
+                                .font(.subheadline)
+                                .fontWeight(.regular)
+                                .foregroundColor(.secondary)
+                        }
+                    }
                 }
+                .padding(0)
                 
+                Rectangle()
+                    .frame(height: 1)
+                    .foregroundColor(.gray)
+                    .padding(.bottom, 8)
+                
+                Button(action: {
+                    isGoalModalPresented.toggle()
+                }, label: {
+                    Text("Edit")
+                        .font(.subheadline)
+                        .fontWeight(.regular)
+                        .frame(maxWidth: .infinity, alignment: .topLeading)
+                })
             }
-            .frame(width: 361, height: 123)
+            .padding(16)
+            .background(Color(UIColor.secondarySystemGroupedBackground))
+            .cornerRadius(10)
+            .padding(.horizontal, 16)
         }
         .sheet(isPresented: $isGoalModalPresented) {
             ReadingGoalView(isGoalModalPresented: $isGoalModalPresented)

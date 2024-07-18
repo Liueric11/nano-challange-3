@@ -14,51 +14,42 @@ struct ShareView: View {
     
     @State private var sheet = false
     @State private var items: [Any] = []
+    @Environment(\.dismiss) private var dismiss
     
     var body: some View {
         VStack {
             SharedImageView(secondsElapsed: secondsElapsed, title: title, text: text)
                 .padding()
         }
-        .padding()
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color(.systemGroupedBackground))
+        .navigationTitle("Preview")
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden(true)
         .toolbar {
-            ToolbarItem(placement: .principal) {
-                HStack {
-                    Text("Preview")
-                        .font(.headline)
-                        .padding(.leading, 170)
-                    Spacer()
-                    
-                    Button(action: {
-                        guard let imageShared = ImageRenderer(content: SharedImageView(secondsElapsed: secondsElapsed, title: title, text: text)).uiImage else {
-                            return
-                        }
-                        
-                        items.removeAll()
-                        items.append(imageShared)
-                        sheet.toggle()
-                    }) {
-                        Image(systemName: "square.and.arrow.up")
-                            .padding(.leading, 10)
-                            .padding(.bottom, 3)
-                            .foregroundColor(.indigo)
+            ToolbarItemGroup(placement: .topBarTrailing) {
+                
+                Button {
+                    guard let imageShared = ImageRenderer(content: SharedImageView(secondsElapsed: secondsElapsed, title: title, text: text)).uiImage else {
+                        return
                     }
-                    .sheet(isPresented: $sheet) {
-                        ShareSheet(items: items)
-                    }
-                    
-                    NavigationLink(destination: OnboardingView()) {
-                        Text("Done")
-                            .foregroundColor(.indigo)
-                    }
+
+                    items.removeAll()
+                    items.append(imageShared)
+                    sheet.toggle()
+                } label: {
+                    Image(systemName: "square.and.arrow.up")
+                        .foregroundColor(.indigo)
+                }
+    
+                NavigationLink(destination: OnboardingView()) {
+                    Text("Done")
+                        .foregroundColor(.indigo)
                 }
             }
         }
-        .navigationBarTitle("Preview")
+        .sheet(isPresented: $sheet) {
+            ShareSheet(items: items)
+        }
     }
 }
 
@@ -74,8 +65,9 @@ struct ShareSheet: UIViewControllerRepresentable {
     }
 }
 
-struct ShareView_Previews: PreviewProvider {
-    static var previews: some View {
+#Preview {
+    NavigationStack{
         ShareView(secondsElapsed: 120, title: "Sample Title", text: "This is a sample text.")
     }
 }
+

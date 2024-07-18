@@ -123,7 +123,11 @@
         }
       }
     },
+    "22 of" : {
+
+    },
     "25 of 44 days streak" : {
+      "extractionState" : "stale",
       "localizations" : {
         "id" : {
           "stringUnit" : {
@@ -134,6 +138,7 @@
       }
     },
     "25 of 66 days streak" : {
+      "extractionState" : "stale",
       "localizations" : {
         "id" : {
           "stringUnit" : {
@@ -152,6 +157,12 @@
           }
         }
       }
+    },
+    "44 days streak" : {
+
+    },
+    "66 days streak" : {
+
     },
     "123" : {
       "localizations" : {
@@ -710,9 +721,6 @@
         }
       }
     },
-    "New Note" : {
-
-    },
     "Next Reading" : {
       "localizations" : {
         "id" : {
@@ -722,6 +730,9 @@
           }
         }
       }
+    },
+    "Note" : {
+
     },
     "Notes" : {
       "localizations" : {

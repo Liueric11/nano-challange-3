@@ -110,7 +110,8 @@ struct RedesignNoteView: View {
                     EmptyView()
                 })
         )
-        .navigationBarTitle("New Note")
+        .toolbarTitleDisplayMode(.inline)
+        .navigationBarTitle("Note")
     }
     
     func submit() {
