@@ -9,7 +9,7 @@ import Foundation
 
 class BadgesViewModel: ObservableObject {
     @Published var badgeItems: [BadgeItem] = [
-        BadgeItem(name: "Good Starter", imageName: "leaf.circle", opacity: 1),
+        BadgeItem(name: "Good Starter", imageName: "leaf.circle", opacity: 0.1),
         BadgeItem(name: "Elevating Growth", imageName: "camera.macro.circle", opacity: 0.1),
         BadgeItem(name: "Steady Tree", imageName: "tree.circle", opacity: 0.1)
     ]

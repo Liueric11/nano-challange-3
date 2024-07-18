@@ -7,6 +7,27 @@
 
 import SwiftUI
 
+extension UserDefaults {
+    var streakCount: Int {
+        get {
+            return integer(forKey: "streakCount")
+        }
+        set {
+            set(newValue, forKey: "streakCount")
+        }
+    }
+    
+    func incrementStreak() {
+        let today = Calendar.current.startOfDay(for: Date())
+        let lastDate = Calendar.current.startOfDay(for: Date(timeIntervalSinceReferenceDate: TimeInterval(integer(forKey: "lastSavedDate"))))
+        
+        if today > lastDate {
+            streakCount += 1
+            set(today.timeIntervalSinceReferenceDate, forKey: "lastSavedDate")
+        }
+    }
+}
+
 struct RedesignNoteView: View {
     @Environment(\.modelContext) private var modelContext
     
@@ -111,7 +132,6 @@ struct RedesignNoteView: View {
                 })
         )
         .toolbarTitleDisplayMode(.inline)
-        .navigationBarTitle("Note")
     }
     
     func submit() {
@@ -119,13 +139,23 @@ struct RedesignNoteView: View {
             fileModel.content = text
             fileModel.title = title
             fileModel.type = selectedOption ?? FileType.book
-        } else{
+        } else {
             let newFile = FileModel(title: title, type: selectedOption ?? FileType.book, content: text)
             modelContext.insert(newFile)
         }
         let newRecord = RecordModel(seconds: secondsElapsed, date: Date())
         modelContext.insert(newRecord)
+    
+        do {
+            try modelContext.save()
+        } catch {
+            print("Error saving context: \(error)")
+        }
+        
+        UserDefaults.standard.incrementStreak()
+        
         stopTimer()
+        
         navigateToShareView = true
     }
 }

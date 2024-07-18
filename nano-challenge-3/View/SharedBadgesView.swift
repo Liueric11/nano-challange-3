@@ -86,9 +86,14 @@ struct BadgesPhotoView: View {
                 .foregroundColor(.primary)
                 .font(.system(size: 34))
             
-            Text("You’ve earned this badge 7 times for doubling your 22 day strike reading goal.")
-                .frame(width: 300, height: 65)
-                .foregroundColor(Color(UIColor.secondaryLabel))
+            VStack {
+                Text("\(UserDefaults.standard.streakCount) of")
+                Text("22 days streak")
+            }
+            .padding(.bottom, 40)
+            .multilineTextAlignment(.center)
+            .frame(width: 300, height: 65)
+            .foregroundColor(Color(UIColor.secondaryLabel))
             
 //            BadgeItemView(badge: viewModel.badgeItems[safe: 0] ?? BadgeItem(name: "", imageName: "", opacity: 0))
 //            BadgeItemView(badge: viewModel.badgeItems[safe: 1] ?? BadgeItem(name: "", imageName: "", opacity: 0))

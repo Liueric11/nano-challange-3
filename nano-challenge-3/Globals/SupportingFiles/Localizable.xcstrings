@@ -50,6 +50,9 @@
         }
       }
     },
+    "%lld of" : {
+
+    },
     "%lld sold" : {
       "localizations" : {
         "id" : {
@@ -760,6 +763,9 @@
     "Preview" : {
 
     },
+    "Quote Selected Text" : {
+
+    },
     "Read every day, set your goals, and embrace your reading journey" : {
 
     },
@@ -928,9 +934,6 @@
       }
     },
     "Year Month Day" : {
-
-    },
-    "You’ve earned this badge 7 times for doubling your 22 day strike reading goal." : {
 
     },
     "Your Reading Goal" : {
