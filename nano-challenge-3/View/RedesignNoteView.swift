@@ -125,9 +125,6 @@ struct RedesignNoteView: View {
         let newRecord = RecordModel(seconds: secondsElapsed)
         modelContext.insert(newRecord)
         stopTimer()
-        title = ""
-        text = ""
-        selectedOption = nil
         navigateToShareView = true
     }
 }

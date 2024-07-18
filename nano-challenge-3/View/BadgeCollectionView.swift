@@ -48,19 +48,22 @@ struct BadgeCollectionView: View {
             
             HStack (spacing: 38){
                 VStack {
+                    Text("22 of")
                     Text("22 days streak")
                         .multilineTextAlignment(.center)
                         
                 } .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
 
                 VStack {
-                    Text("25 of 44 days streak")
+                    Text("22 of")
+                    Text("44 days streak")
                         .multilineTextAlignment(.center)
                         
                 } .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
 
                 VStack {
-                    Text("25 of 66 days streak")
+                    Text("22 of")
+                    Text("66 days streak")
                         .multilineTextAlignment(.center)
                        
                 } .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)

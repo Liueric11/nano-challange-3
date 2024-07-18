@@ -16,8 +16,49 @@
     "%lld min" : {
 
     },
+    "%lld minutes" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld minute"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "new",
+                  "value" : "%lld minutes"
+                }
+              }
+            }
+          }
+        },
+        "id" : {
+          "variations" : {
+            "plural" : {
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "menit"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "%lld sold" : {
-
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "terjual"
+          }
+        }
+      }
     },
     "8" : {
       "extractionState" : "stale",
@@ -223,7 +264,14 @@
 
     },
     "Done" : {
-
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Done"
+          }
+        }
+      }
     },
     "Duration" : {
       "extractionState" : "stale",
@@ -781,6 +829,9 @@
           }
         }
       }
+    },
+    "Seconds" : {
+
     },
     "Select a time" : {
       "localizations" : {

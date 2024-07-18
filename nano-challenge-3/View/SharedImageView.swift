@@ -13,20 +13,20 @@ struct SharedImageView: View {
     let text: String
     
     var body: some View {
-        VStack (spacing: 24){
+        VStack (spacing: 24) {
             ZStack {
                 Rectangle()
                     .frame(width: 354, height: 101)
                     .foregroundColor(Color(UIColor.secondarySystemGroupedBackground))
                     .cornerRadius(10)
                 
-                VStack (alignment: .leading, spacing: 20){
+                VStack (alignment: .leading, spacing: 20) {
                     Text("Congratulations!")
                         .font(.system(size: 20))
                     
-                    HStack (alignment: .firstTextBaseline){
-                        Text("\(secondsElapsed/60)")
-                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                    HStack (alignment: .firstTextBaseline) {
+                        Text("\(secondsElapsed / 60)")
+                            .fontWeight(.bold)
                             .font(.system(size: 22))
                             .foregroundColor(.indigo)
                         Text("mins reading")
@@ -44,22 +44,19 @@ struct SharedImageView: View {
                     .foregroundColor(Color(UIColor.secondarySystemGroupedBackground))
                     .cornerRadius(10)
                 
-                VStack (alignment: .leading){
-                    Text("\(title)")
+                VStack (alignment: .leading) {
+                    Text(title)
                         .bold()
                         .font(.system(size: 22))
-                    Text("\(text)")
+                    Text(text)
                 }
                 .frame(width: 330, height: 525, alignment: .topLeading)
                 
             }
         }
         .padding()
-        .padding()
-        .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color(.systemGroupedBackground))
-        
     }
 }
 
@@ -68,6 +65,5 @@ struct SharedImageView_Previews: PreviewProvider {
         SharedImageView(secondsElapsed: 120, title: "Sample Title", text: "This is a sample text.")
     }
 }
-
 
 
