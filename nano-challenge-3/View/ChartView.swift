@@ -24,7 +24,7 @@ struct ChartView: View {
                 
                 
                 YourReadingGoal()
-                    .padding(.bottom, 30)
+                    .padding(.vertical, 12)
                 
                 BadgesCollection()
             }

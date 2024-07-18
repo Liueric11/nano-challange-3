@@ -131,6 +131,7 @@ struct RedesignNoteView: View {
                     EmptyView()
                 })
         )
+        .toolbarTitleDisplayMode(.inline)
     }
     
     func submit() {
