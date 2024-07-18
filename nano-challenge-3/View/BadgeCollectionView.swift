@@ -39,8 +39,6 @@ struct BadgeCollectionView: View {
                 
                 BadgeItemView(badge: viewModel.badgeItems[safe: 2] ?? BadgeItem(name: "", imageName: "", opacity: 0))
                     .frame(width: 105)
-                
-//                Badges()
             }
             .sheet(isPresented: $isBadgeModalPresented) {
                 ShareBadges(isBadgeModalPresented: $isBadgeModalPresented)
@@ -48,21 +46,21 @@ struct BadgeCollectionView: View {
             
             HStack (spacing: 38){
                 VStack {
-                    Text("22 of")
+                    Text("\(UserDefaults.standard.streakCount) of")
                     Text("22 days streak")
                         .multilineTextAlignment(.center)
                         
                 } .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
 
                 VStack {
-                    Text("22 of")
+                    Text("\(UserDefaults.standard.streakCount) of")
                     Text("44 days streak")
                         .multilineTextAlignment(.center)
                         
                 } .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
 
                 VStack {
-                    Text("22 of")
+                    Text("\(UserDefaults.standard.streakCount) of")
                     Text("66 days streak")
                         .multilineTextAlignment(.center)
                        
