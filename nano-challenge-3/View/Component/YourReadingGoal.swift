@@ -18,11 +18,23 @@ struct YourReadingGoal: View {
     var body: some View {
         VStack {
             Text("Your Reading Goal")
-                .font(.system(size: 17))
+                .font(.title3)
                 .fontWeight(.semibold)
                 .frame(maxWidth: .infinity, alignment: .topLeading)
-                .padding(.leading, 20)
-                .padding(.bottom, 20)
+                .padding(16)
+            
+            VStack{
+                VStack{
+                    HStack{
+                        Label {
+                            Text("Goals")
+                        } icon: {
+                            Image(systemName: "flag.checkered") // Replace with your image name
+                        }
+                    }
+                }
+            }
+            .background(Color(UIColor.secondarySystemGroupedBackground))
             
             ZStack {
                 Rectangle()
