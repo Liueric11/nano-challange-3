@@ -10,6 +10,8 @@ import SwiftUI
 struct UITextViewRepresentable: UIViewRepresentable {
     @Binding var title: String
     @Binding var text: String
+    
+    @Environment(\.colorScheme) var colorScheme
 
     func makeUIView(context: Context) -> UITextView {
         let textView = UITextView()
@@ -21,12 +23,13 @@ struct UITextViewRepresentable: UIViewRepresentable {
         textView.textContainerInset = UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16)
         return textView
     }
-
+    
     func updateUIView(_ uiView: UITextView, context: Context) {
         uiView.text = title + (text.isEmpty ? "" : "\n") + text
         applyStyles(to: uiView)
+        updateTextColor(for: uiView)
     }
-
+    
     func applyStyles(to textView: UITextView) {
         let combinedText = textView.text ?? ""
         let attributedText = NSMutableAttributedString(string: combinedText)
@@ -81,6 +84,14 @@ struct UITextViewRepresentable: UIViewRepresentable {
                 parent.text = ""
             }
             parent.applyStyles(to: textView)
+        }
+    }
+    
+    private func updateTextColor(for textView: UITextView) {
+        if colorScheme == .dark {
+            textView.textColor = .white
+        } else {
+            textView.textColor = .black
         }
     }
 }

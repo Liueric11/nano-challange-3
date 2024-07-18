@@ -14,9 +14,9 @@ final class RecordModel: Identifiable {
     var date: Date
     var seconds: Int
     
-    init(seconds: Int) {
+    init(seconds: Int, date: Date) {
         self.id = UUID()
-        self.date = Date()
+        self.date = date
         self.seconds = seconds
     }
 }

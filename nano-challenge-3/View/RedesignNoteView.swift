@@ -79,7 +79,7 @@ struct RedesignNoteView: View {
             .padding(.horizontal, 16)
             
             UITextViewRepresentable(title: $title, text: $text)
-                .background(Color.white)
+                .background(Color(UIColor.secondarySystemGroupedBackground))
                 .cornerRadius(10)
                 .padding(.horizontal, 16)
         }
@@ -123,7 +123,7 @@ struct RedesignNoteView: View {
             let newFile = FileModel(title: title, type: selectedOption ?? FileType.book, content: text)
             modelContext.insert(newFile)
         }
-        let newRecord = RecordModel(seconds: secondsElapsed)
+        let newRecord = RecordModel(seconds: secondsElapsed, date: Date())
         modelContext.insert(newRecord)
         stopTimer()
         navigateToShareView = true
