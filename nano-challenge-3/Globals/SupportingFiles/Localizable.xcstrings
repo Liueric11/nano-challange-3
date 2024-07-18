@@ -2,16 +2,31 @@
   "sourceLanguage" : "en",
   "strings" : {
     "" : {
-
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        }
+      }
     },
-    "Change block style" : {
-
-    },
-    "Delete" : {
-
-    },
-    "Duration" : {
-
+    "ls.action.change-block-style" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Change Block Style"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ganti gaya blok"
+          }
+        }
+      }
     },
     "ls.button.add-note-paragraph" : {
       "extractionState" : "manual",
@@ -110,7 +125,24 @@
         "id" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Gajadi"
+            "value" : "Batal"
+          }
+        }
+      }
+    },
+    "ls.cta.delete" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus"
           }
         }
       }
@@ -132,6 +164,23 @@
         }
       }
     },
+    "ls.cta.review" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Review"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Review"
+          }
+        }
+      }
+    },
     "ls.cta.save" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -149,6 +198,23 @@
         }
       }
     },
+    "ls.list-content.reading-duration" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reading time"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lama membaca"
+          }
+        }
+      }
+    },
     "ls.list-header.body.icloud" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -162,6 +228,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Semua yang disini akan sinkron antar perangkat"
+          }
+        }
+      }
+    },
+    "ls.list-header.note-content-for-review" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I've noted the following!"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aku mencatat demikian"
           }
         }
       }
@@ -319,6 +402,23 @@
         }
       }
     },
+    "ls.navigation-title.note-review" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Note Review"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Review Catatan"
+          }
+        }
+      }
+    },
     "ls.navigation-title.sheet.new-folder" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -336,11 +436,56 @@
         }
       }
     },
-    "Reading time" : {
-
+    "ls.review.reading-duration" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Congratulations, you've read for"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selamat, kamu membaca selama"
+          }
+        }
+      }
     },
-    "Reminder" : {
-
+    "ls.settings.reading-duration" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reading Target Duration"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Target Durasi Membaca"
+          }
+        }
+      }
+    },
+    "ls.settings.reminder" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reminder"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pengingat"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"
